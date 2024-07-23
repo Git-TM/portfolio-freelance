@@ -1,0 +1,39 @@
+{
+    "toggleTheme": "Change Theme",
+    "changerLangue": "Francais 🇫🇷",
+    "changerTheme": "Changer Theme",
+    "banner": {
+      "headline": "Hi there,",
+      "subheadline": "I'm a passionate fullstack web developer, and I mainly use Ruby On Rails and Vue.js"
+    },
+    "projects": {
+      "vera": {
+        "title": "Vera",
+        "description": "Application mobile iOs et Android : Vide dressing virtuel et dimension sociale comme Instagram (Compte, Like, Follow, Partage, Profil)",
+        "implication": [
+          "Ajout de fonctionnalités fullstack de la conception de l'architecture jusqu'à l'implémentation du design",
+          "Refonte de l'archi SSO multi plateforme"
+        ],
+        "technologies": "Ruby On rails, Vue.js, Ionic, GCP"
+      },    
+      "quelleenergie": {
+        "title": "quelleenergie",
+        "description": "Quelleenergie est une plateforme Back-office/ERP de géolocalisation, mise en relation, facturation etc.. pour les artisans francais",
+        "implication": [
+          "Ajout de fonctionnalités fullstack de la conception de l'architecture jusqu'à l'implémentation du design",
+          "Refonte de l'archi SSO multi plateforme"
+        ],
+        "technologies": "Ruby On rails"
+      },
+      "annuaire": {
+        "title": "annuaire",
+        "description": "Quelleenergie est une plateforme Back-office/ERP de géolocalisation, mise en relation, facturation etc.. pour les artisans francais",
+        "implication": [
+          "Ajout de fonctionnalités fullstack de la conception de l'architecture jusqu'à l'implémentation du design",
+          "Refonte de l'archi SSO multi plateforme"
+        ],
+        "technologies": "Ruby On rails"
+      }
+    }
+  }
+  

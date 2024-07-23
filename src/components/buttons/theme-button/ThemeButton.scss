@@ -1,0 +1,63 @@
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+  }
+  
+  .switch-checkbox {
+    display: none;
+  }
+  
+  .switch-label {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  .switch-background {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 56px;
+    height: 32px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 18px;
+    padding: 2px;
+  }
+  
+  .switch-label .icon-moon,
+  .switch-label .icon-sun {
+    display: inline-block;
+    font-size: 16px;
+  }
+  
+  .switch-toggle {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 24px;
+    height: 24px;
+    background-color: black;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .switch-toggle-checked {
+    transform: translateX(24px);
+  }
+  
+  .switch-checkbox:checked + .switch-label .icon-moon {
+    opacity: 1;
+  }
+  
+  .switch-checkbox:checked + .switch-label .icon-sun {
+    opacity: 0;
+  }
+  
+  .hidden {
+    display: none;
+  }
