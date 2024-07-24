@@ -9,10 +9,14 @@
     "projects": {
       "vera": {
         "title": "Vera",
-        "description": "Application mobile iOs et Android : Vide dressing virtuel et dimension sociale comme Instagram (Compte, Like, Follow, Partage, Profil)",
-        "implication": [
-          "Ajout de fonctionnalités fullstack de la conception de l'architecture jusqu'à l'implémentation du design",
-          "Refonte de l'archi SSO multi plateforme"
+        "description": "English Application mobile iOs et Android : Vide dressing virtuel et dimension sociale comme Instagram (Compte, Like, Follow, Partage, Profil)",
+        "features": [
+          {
+            "feature": "English Ajout de fonctionnalités fullstack de la conception de l'architecture jusqu'à l'implémentation du design"
+          },
+          {
+            "feature": "English Refonte de l'archi SSO multi plateforme"
+          }
         ],
         "technologies": "Ruby On rails, Vue.js, Ionic, GCP"
       },    

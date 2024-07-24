@@ -8,7 +8,7 @@
 </script>
   
 <template>
-    <h2>Mes projets</h2>
+    <h2>{{t('banner.headline')}}Mes projets</h2>
     <div class="details-projets">
         <div v-for="(project, index) in projects" :key="index">
             <DetailProjet :projectKey="project" :index="index" />
