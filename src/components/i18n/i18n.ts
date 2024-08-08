@@ -5,7 +5,7 @@ import fr from '../../locales/fr.json'
 
 const i18n = createI18n({
   legacy: false, // utilisez la composition API
-  locale: 'en', // langue par défaut
+  locale: 'fr', // langue par défaut
   messages: {
     en,
     fr

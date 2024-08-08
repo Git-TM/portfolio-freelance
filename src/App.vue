@@ -22,14 +22,16 @@ const handleToggleTheme = () => {
 </script>
 
 <template>
-  <div class="container">
+  <div>
     <NavbarMain
-    @switch-language="handleSwitchLanguage"
-    @toggle-theme="handleToggleTheme"
-    :current-locale="currentLocale"
+      @switch-language="handleSwitchLanguage"
+      @toggle-theme="handleToggleTheme"
+      :current-locale="currentLocale"
     />
-    <BannerAccueil />
-    <BannerDetail />
-    <DetailProjets />
+    <div class="main-content">
+      <BannerAccueil />
+      <BannerDetail />
+      <DetailProjets />
+    </div>
   </div>
 </template>

@@ -1,11 +1,17 @@
 .banner-container {
-    height: 15rem;
+    height: calc(100vh - 4.5rem);
     display: flex;
     justify-content: space-evenly;
-    margin: 10rem 0rem;
-    padding: 0 3rem;
+    background-color: grey;
+    align-items: center;
 }
 
 .banner-headline {
     max-width: 20rem;
+}
+
+.banner-software {
+    width: 500px;
+    height: auto;
+    max-width: 100%;
 }

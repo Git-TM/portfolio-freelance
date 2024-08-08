@@ -3,10 +3,16 @@
     "changerLangue": "English 🇬🇧",
     "changerTheme": "Changer Theme",
     "banner": {
-      "headline": "Salut,",
-      "subheadline": "Je suis développeur fullstack passioné, et je code principalement en Ruby On Rails et Vue.js"
+      "description": "Salut,\n Je suis développeur fullstack passioné, et j'adore les problématiques back-end, APIs, SQL..'"
+    },
+    "introduction": {
+        "headline": "A propos de moi",
+        "description_formation": "Ingénieur de formation, avec un stage de fin d'étude en cabinet de conseil digital/data, j'ai passé 2 ans à aider des start-ups pour accélérer leur croissance en mettant en place des systèmes automatisés (Prospection B2B, SEO, emailing..)",
+        "description_dev": "Depuis 2 ans, je me plonge dans le développement web. Au sein de l'agence Captive, je participe au développement et au maintien de plusieurs projets web et mobiles. Je code principalement en Ruby on Rails, Vue.js, Ionic."
+
     },
     "projects": {
+      "headline": "Mes projets",
       "featuretitle": "Mes contributions",
       "vera": {
         "title": "Vera",

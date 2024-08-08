@@ -20,10 +20,10 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-const userTheme = ref('light-theme');
+const userTheme = ref('dark-theme');
 
 const toggleTheme = () => {
-  userTheme.value = userTheme.value === 'light-theme' ? 'dark-theme' : 'light-theme';
+  userTheme.value = userTheme.value === 'dark-theme' ? 'light-theme' : 'dark-theme';
   document.documentElement.className = userTheme.value;
 };
 </script>
