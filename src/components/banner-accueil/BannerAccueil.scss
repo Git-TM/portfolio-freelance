@@ -26,12 +26,12 @@
 
 .moon-image {
   position: absolute;
-  top: -50rem;
+  top: -40rem;
   opacity: 1;
   z-index: 0;
   animation: spin 70s linear infinite;
-  width: 75rem;
-  left: calc(50% - 37.5rem);
+  width: 60rem;
+  left: calc(50% - 30rem);
 }
 
 @keyframes spin {

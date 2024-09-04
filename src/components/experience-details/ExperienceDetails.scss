@@ -1,5 +1,6 @@
 .experiences-content {
   display: flex;
+  justify-content: space-evenly;
 
   & .experiences-menu {
     padding-right: 2rem;
@@ -33,6 +34,7 @@
         padding: 0px;
         margin: 0px;
         list-style: none;
+        width: 100%;
       }
 
       & li {
@@ -45,6 +47,29 @@
         color: $primary-color;
         font-weight: bold;
       } 
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .experiences-content {
+    display: block;
+
+    & .experiences-menu {
+      & ul {
+        display: flex;
+        overflow-y: auto;
+
+        & li {
+          border-left: none;
+          border-bottom: .5px solid grey;
+        }
+
+        & .menu-selected-value {
+          border-bottom: solid 2px $primary-color;
+          border-left: none;
+        }
+      }
     }
   }
 }
