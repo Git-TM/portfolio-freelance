@@ -2,7 +2,7 @@
 import { ref } from '@vue/runtime-core'
 import NavbarMain from '@/components/NavbarMain/NavbarMain';
 import BannerAccueil from '@/components/banner-accueil/BannerAccueil.vue';
-import BannerDetail from '@/components/banner-detail/BannerDetail';
+import ExperienceDetails from '@/components/experience-details/ExperienceDetails';
 import DetailProjets from '@/components/detail-projets/DetailProjets';
 import { useI18n } from 'vue-i18n';
 
@@ -30,7 +30,7 @@ const handleToggleTheme = () => {
     />
     <div class="main-container">
       <BannerAccueil />
-      <BannerDetail />
+      <ExperienceDetails />
       <DetailProjets />
     </div>
   </div>

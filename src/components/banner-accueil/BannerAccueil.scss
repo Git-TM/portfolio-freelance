@@ -1,5 +1,4 @@
 .banner-container {
-  height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -9,12 +8,19 @@
 }
 
 .banner-headline {
-  padding: 4rem 8rem;
   margin-top: 20rem;
+
+  & p {
+    padding: 2rem 0;
+  }
 
   & h3 {
     margin: 0
   }
+
+   & .banner-description {
+    width: 20rem;
+   }
 }
 
 
