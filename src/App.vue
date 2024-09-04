@@ -28,7 +28,7 @@ const handleToggleTheme = () => {
       @toggle-theme="handleToggleTheme"
       :current-locale="currentLocale"
     />
-    <div class="main-content">
+    <div class="main-container">
       <BannerAccueil />
       <BannerDetail />
       <DetailProjets />

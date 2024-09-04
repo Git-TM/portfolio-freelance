@@ -1,3 +1,14 @@
+<script setup lang="ts">
+import { ref } from 'vue';
+
+const userTheme = ref('dark-theme');
+
+const toggleTheme = () => {
+  userTheme.value = userTheme.value === 'dark-theme' ? 'light-theme' : 'dark-theme';
+  document.documentElement.className = userTheme.value;
+};
+</script>
+
 <template>
   <div class="theme-toggle">
     <input
@@ -16,14 +27,3 @@
     </label>
   </div>
 </template>
-
-<script setup lang="ts">
-import { ref } from 'vue';
-
-const userTheme = ref('dark-theme');
-
-const toggleTheme = () => {
-  userTheme.value = userTheme.value === 'dark-theme' ? 'light-theme' : 'dark-theme';
-  document.documentElement.className = userTheme.value;
-};
-</script>

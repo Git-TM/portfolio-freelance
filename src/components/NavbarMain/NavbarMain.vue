@@ -23,7 +23,7 @@
   <div class="navbar-container">
     <img alt="Vue logo" class="navbar-logo" src="@/assets/images/logo.png" />
     <div class="navbar-right-content">
-      <button @click="switchLanguage">{{ currentLocale === 'fr' ? 'English' : 'Français' }}</button>
+      <button @click="switchLanguage">{{ currentLocale === 'fr' ? 'US' : 'FR' }}</button>
       <ThemeButton />
     </div>
   </div>

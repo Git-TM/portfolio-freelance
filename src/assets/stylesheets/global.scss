@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400..700;1,400..700&family=Roboto+Slab:wght@100..900&display=swap');
 
-$primary-color: #3498db;
-$secondary-color: #41b883;
-
 .light-theme {
     --background-color: white;
     --text-color: black;
@@ -34,20 +31,19 @@ h4 {
     font-size: 1.125rem;
 }
 
-.blue-font {
+.primary-color-font {
     color: $primary-color;
 }
 
 body {
-    width: 100%;
-    margin: 0;
-    font-size: 1rem;
-    font-family: "Finlandica", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    background-color: var(--background-color);
-    color: var(--text-color);
+  margin: 0;
+  font-size: 1rem;
+  font-family: "Finlandica", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 button {
@@ -58,4 +54,9 @@ button {
     color: white;
     border: none;
     border-radius: 2rem;
+}
+
+.main-container {
+  width: calc(100% - $padding-navbar);
+  padding-left: $padding-navbar;
 }

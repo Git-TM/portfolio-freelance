@@ -1,17 +1,38 @@
 .banner-container {
-    height: calc(100vh - 4.5rem);
-    display: flex;
-    justify-content: space-evenly;
-    background-color: grey;
-    align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.big-heading{
+  font-size: 2.5rem;
 }
 
 .banner-headline {
-    max-width: 20rem;
+  padding: 4rem 8rem;
+  margin-top: 20rem;
+
+  & h3 {
+    margin: 0
+  }
 }
 
-.banner-software {
-    width: 500px;
-    height: auto;
-    max-width: 100%;
+
+.moon-image {
+  position: absolute;
+  top: -50rem;
+  opacity: 1;
+  z-index: 0;
+  animation: spin 70s linear infinite;
+  width: 75rem;
+  left: calc(50% - 37.5rem);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
