@@ -1,6 +1,7 @@
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n';
-  import DetailProjet from '../detail-projet/DetailProjet.vue';
+  import IconCoding from '@/assets/images/icon-coding.svg'
+  import PrimaryButton from '../buttons/primary-button/PrimaryButton.vue';
   
   const { t } = useI18n();
   
@@ -9,10 +10,18 @@
   
 <template>
     <h2>{{t('projects.headline')}}</h2>
-    <div class="details-projets">
-        <div v-for="(project, index) in projects" :key="index">
-            <DetailProjet :projectKey="project" :index="index" />
+    <div class="projects-card">
+      <div class= "project-card" v-for="(project, index) in projects" :key="index">
+        <div class="project-card-title">
+          <IconCoding class="project-icon-coding" />
+          <h3>{{ t(`projects.${project}.title`) }}</h3>
         </div>
+        <p class="project-card-technologies">{{ t(`projects.${project}.technologies`) }}</p>
+        <p>{{ t(`projects.${project}.description`) }}</p>
+        <div class="project-card-link">
+          <PrimaryButton content="Voir plus" class="project-button" />
+        </div>
+      </div>
     </div>
 </template>
   
