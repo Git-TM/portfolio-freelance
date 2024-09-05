@@ -7,8 +7,8 @@
 
 
 <template>
-  <img alt="Vue logo" class="moon-image" src="@/assets/images/new-moon.png" />
   <div class="banner-container">
+    <img alt="Vue logo" class="moon-image" src="@/assets/images/new-moon.png" />
     <div class="banner-headline">
         <p class="primary-color-font">Bonjour, je m'appelle</p>
         <h3 class="big-heading brighter-white">Tristan Monteiro.</h3>
