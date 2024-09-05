@@ -10,7 +10,7 @@
   
 <template>
   <div class="projects-container">
-    <h2>{{t('projects.headline')}}</h2>
+    <h2><span class="numbered-title">03. </span>{{t('projects.headline')}}</h2>
     <div class="projects-card">
         <div class= "project-card" v-for="(project, index) in projects" :key="index">
           <div class="project-card-title">

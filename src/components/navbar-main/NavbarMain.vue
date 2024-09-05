@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import { watch } from 'vue';
   import { useI18n } from 'vue-i18n';
-  import ThemeButton from '../buttons/theme-button/ThemeButton.vue';
+  import ThemeButton from '../buttons/theme-button/ThemeButton';
   
   const props = defineProps<{ currentLocale: string }>();
   const emit = defineEmits(['switch-language', 'toggle-theme']);

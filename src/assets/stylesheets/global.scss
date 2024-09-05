@@ -40,6 +40,14 @@ h4 {
   color: $white-dark;
 }
 
+.brighter-white {
+  color: $white-text;
+}
+
+.numbered-title {
+  color: $primary-color;
+}
+
 body {
   margin: 0;
   font-size: 1rem;
@@ -49,37 +57,38 @@ body {
   font-style: normal;
   background-color: var(--background-color);
   color: var(--text-color);
-  padding: 0rem 5rem;
 }
 
 button {
-    width: 4rem;
-    height: 2rem;
-    margin: auto 0;
-    background-color: $primary-color;
-    color: white;
-    border: none;
-    border-radius: 2rem;
+  width: 4rem;
+  height: 2rem;
+  margin: auto 0;
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  border-radius: 2rem;
 }
 
-.main-container {
-  width: calc(100% - $padding-navbar);
-  padding-left: $padding-navbar;
-}
-
+.aboutme-container,
 .banner-container,
 .experiences-container,
-.projects-container {
-  padding: 2rem 0;
+.projects-container,
+.contact-container {
+  padding: 2rem 5rem;
 }
 
 @media (max-width: 768px) {
-  body {
-    padding: 0 2rem;
+  .aboutme-container,
+  .banner-container,
+  .experiences-container,
+  .projects-container,
+  .contact-container {
+    padding: 0rem 2rem;
   }
+}
 
-  .main-container {
-    width: 100%;
-    padding-left: 0;
+@media (max-width: 480px) {
+  h2 {
+    padding-left: 2rem;
   }
 }

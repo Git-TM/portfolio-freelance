@@ -5,7 +5,7 @@ import { computed, ref } from 'vue';
 const { t, tm } = useI18n();
 const selectedExperience = ref<string>('captive'); 
 
-const experiences = ['captive', 'freelance', 'lewagon', 'cartelis'];
+const experiences = ['captive', 'lewagon', 'freelance', 'cartelis'];
 
 const selectExperience = (experienceKey: string) => {
   selectedExperience.value = experienceKey;
@@ -16,7 +16,7 @@ const selectedExperienceKey = computed(() => selectedExperience.value);
 
 <template>
   <div class="experiences-container">
-    <h2>Où j'ai travaillé</h2>
+    <h2><span class="numbered-title">02. </span>Où j'ai travaillé</h2>
     <div class="experiences-content">
       <div class="experiences-menu">
         <ul>

@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { ref } from '@vue/runtime-core'
-import NavbarMain from '@/components/NavbarMain/NavbarMain';
-import BannerAccueil from '@/components/banner-accueil/BannerAccueil.vue';
+import NavbarMain from '@/components/navbar-main/NavbarMain';
+import BannerAccueil from '@/components/banner-accueil/BannerAccueil';
+import AboutMe from '@/components/about-me/AboutMe';
 import ExperienceDetails from '@/components/experience-details/ExperienceDetails';
 import DetailProjets from '@/components/detail-projets/DetailProjets';
+import Contact from '@/components/contact/Contact';
 import { useI18n } from 'vue-i18n';
 
 const { locale } = useI18n();
@@ -22,16 +24,16 @@ const handleToggleTheme = () => {
 </script>
 
 <template>
-  <div>
-    <NavbarMain
-      @switch-language="handleSwitchLanguage"
-      @toggle-theme="handleToggleTheme"
-      :current-locale="currentLocale"
-    />
-    <div class="main-container">
+  <div class="main-container">
+      <NavbarMain
+        @switch-language="handleSwitchLanguage"
+        @toggle-theme="handleToggleTheme"
+        :current-locale="currentLocale"
+      />
       <BannerAccueil />
+      <AboutMe />
       <ExperienceDetails />
       <DetailProjets />
+      <Contact />
     </div>
-  </div>
 </template>

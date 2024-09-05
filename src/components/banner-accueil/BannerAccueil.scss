@@ -12,6 +12,7 @@
 
   & p {
     padding: 2rem 0;
+    font-size: 1.25rem;
   }
 
   & h3 {
@@ -19,7 +20,7 @@
   }
 
    & .banner-description {
-    width: 20rem;
+    width: 30rem;
    }
 }
 
@@ -42,3 +43,23 @@
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 768px) {
+  .moon-image {
+    width: 35rem;
+    left: calc(50% - 17.5rem);
+    top: -20rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-headline {
+    margin-top: 15rem;
+
+    & .banner-description {
+     width: 20rem;
+    }
+  }
+}
+
+
