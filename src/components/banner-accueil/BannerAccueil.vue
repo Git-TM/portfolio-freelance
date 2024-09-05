@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n';
-  import PrimaryButton from '../buttons/primary-button/PrimaryButton.vue';
+  import PrimaryButton from '../buttons/primary-button/PrimaryButton';
 
   const { t } = useI18n();
   </script>

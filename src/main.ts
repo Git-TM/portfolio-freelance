@@ -6,7 +6,6 @@ import App from './App.vue'
 
 // 1. Styles
 import '@/assets/stylesheets/global.scss';
-import '@/assets/stylesheets/app.scss';
 
 const app = createApp(App)
 
