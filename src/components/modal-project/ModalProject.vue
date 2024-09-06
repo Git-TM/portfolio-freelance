@@ -13,6 +13,10 @@ const props = defineProps({
   projectName: {
     type: String,
     required: true
+  },
+  projectType: {
+    type: String,
+    required: true
   }
 })
 
@@ -30,12 +34,17 @@ const imageSrc = computed(() => {
 <template>
   <div class="modal-overlay" v-if="show" @click.self="close">
     <div class="modal-content">
-      <h3 class="big-heading modal-title">{{ t(`projects.${projectName}.title`) }}</h3>
+      <h3 class="big-heading modal-title">
+        {{ t(`projects.${props.projectType}.${projectName}.title`) }}
+      </h3>
       <img :src="imageSrc" alt="project-photo" class="modal-content-photo" />
-      <p>{{ t(`projects.${projectName}.technologies`) }}</p>
+      <p>{{ t(`projects.${props.projectType}.${projectName}.technologies`) }}</p>
       <h3 class="modal-title">Fonctionnalités</h3>
       <ul>
-        <li v-for="(mission, index) in tm(`projects.${projectName}.features`)" :key="index">
+        <li
+          v-for="(mission, index) in tm(`projects.${props.projectType}.${projectName}.features`)"
+          :key="index"
+        >
           {{ mission }}
         </li>
       </ul>

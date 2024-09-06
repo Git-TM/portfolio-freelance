@@ -59,43 +59,76 @@
     }
   },
   "projects": {
-    "headline": "Mes projets",
-    "featuretitle": "Mes contributions",
-    "vera": {
-      "title": "Vera",
-      "description": "Application mobile iOs et Android : Vide dressing virtuel et dimension sociale comme Instagram (Compte, Like, Follow, Partage, Profil)",
-      "features": [
-        "Amélioration du SSO multi-plateforme (Séparation de compte / utilisateur)",
-        "Création de l'algorithme de proposition des tenues et amélioration SQL",
-        "Intégrations de fonctionnalités fullstack : API Rest, intégration en Vue.js/Ionic. (Like des tenues, follow)",
-        "Création de tests (Rspec, Cypress, Jest)"
-      ],
-      "technologies": "Ruby On rails, Vue.js, Ionic, GCP"
+    "featured_projects": {
+      "headline": "Mes projets professionels",
+      "vera": {
+        "title": "Vera",
+        "description": "Application mobile iOs et Android : Vide dressing virtuel et dimension sociale comme Instagram (Compte, Like, Follow, Partage, Profil)",
+        "features": [
+          "Amélioration du SSO multi-plateforme (Séparation de compte / utilisateur)",
+          "Création de l'algorithme de proposition des tenues et amélioration SQL",
+          "Intégrations de fonctionnalités fullstack : API Rest, intégration en Vue.js/Ionic. (Like des tenues, follow)",
+          "Création de tests (Rspec, Cypress, Jest)"
+        ],
+        "technologies": "Ruby On rails, Vue.js, Ionic, GCP"
+      },
+      "quelleenergie": {
+        "title": "quelleenergie",
+        "description": "Quelleenergie est une plateforme Back-office/ERP de géolocalisation, mise en relation, facturation etc.. pour les artisans francais",
+        "features": [
+          "Ajout de fonctionnalités fullstack de la conception de l'architecture jusqu'à l'implémentation du design",
+          "Ajout de fonctionnalités back-end, admin",
+          "Maintenance applicative et montée en version : Rails 5, 6, 7, Ruby 3, Sidekiq 7 ...",
+          "Migrations de données avec de forts impacts business (centaine de milliers d'entrée)"
+        ],
+        "technologies": "Ruby On rails"
+      },
+      "annuaire": {
+        "title": "annuaire",
+        "description": "Application RoR de MAJ quotidienne de l'ensemble des 300k+ artisans de France, leurs sociétés, certifications (https://artisans.quelleenergie.fr/)",
+        "features": [
+          "Ajout de fonctionnalités fullstack de la conception de l'architecture jusqu'à l'implémentation du design",
+          "Ajout de fonctionnalités back-end, admin",
+          "Maintenance applicative et montée en version : Rails 5, 6, 7, Ruby 3, Sidekiq 7 ...",
+          "Migrations de données avec de forts impacts business (centaine de milliers d'entrée)",
+          "Optimisation des requêtes SQL sur PostgreSQL et MySQL (géolocalisation/matching, exports de données)",
+          "Suivi proactif des bugs (Datadog, GCP) et correction de bugs complexes (APIs, synchro outils, CRON & Jobs) avec les équipes internes",
+          "Participation à la réduction de la dette technique : refonte des logs, et amélioration des specs API pour rendre les équipes plus autonomes."
+        ],
+        "technologies": "Ruby On rails"
+      }
     },
-    "quelleenergie": {
-      "title": "quelleenergie",
-      "description": "Quelleenergie est une plateforme Back-office/ERP de géolocalisation, mise en relation, facturation etc.. pour les artisans francais",
-      "features": [
-        "Ajout de fonctionnalités fullstack de la conception de l'architecture jusqu'à l'implémentation du design",
-        "Ajout de fonctionnalités back-end, admin",
-        "Maintenance applicative et montée en version : Rails 5, 6, 7, Ruby 3, Sidekiq 7 ...",
-        "Migrations de données avec de forts impacts business (centaine de milliers d'entrée)"
-      ],
-      "technologies": "Ruby On rails"
-    },
-    "annuaire": {
-      "title": "annuaire",
-      "description": "Application RoR de MAJ quotidienne de l'ensemble des 300k+ artisans de France, leurs sociétés, certifications (https://artisans.quelleenergie.fr/)",
-      "features": [
-        "Ajout de fonctionnalités fullstack de la conception de l'architecture jusqu'à l'implémentation du design",
-        "Ajout de fonctionnalités back-end, admin",
-        "Maintenance applicative et montée en version : Rails 5, 6, 7, Ruby 3, Sidekiq 7 ...",
-        "Migrations de données avec de forts impacts business (centaine de milliers d'entrée)",
-        "Optimisation des requêtes SQL sur PostgreSQL et MySQL (géolocalisation/matching, exports de données)",
-        "Suivi proactif des bugs (Datadog, GCP) et correction de bugs complexes (APIs, synchro outils, CRON & Jobs) avec les équipes internes",
-        "Participation à la réduction de la dette technique : refonte des logs, et amélioration des specs API pour rendre les équipes plus autonomes."
-      ],
-      "technologies": "Ruby On rails"
+    "personal_projects": {
+      "headline": "Mes missions freelance & perso",
+      "portfolio": {
+        "title": "Portfolio",
+        "description": "Portfolio simple qui retrace mon parcours, mes projets",
+        "features": [
+          "Traduction avec vue-i18n qui vient définir tout le contenu du site, bouton de traduction auto",
+          "Mise en place de responsive pour mobile"
+        ],
+        "technologies": "Vue.js, Typescript"
+      },
+      "misterauto": {
+        "title": "Mister Auto",
+        "description": "Consultant migration du système transactionnel existant vers Emarsys (SAP)",
+        "features": [
+          "Coordination des règles métiers entre DSI et équipe métier pour gérer les spécificités par pays/produits etc..",
+          "Rédaction de la documentation technique et formation pour 15 personnes, afin de rendre les équipes autonomes",
+          "Résultat : 99,7% de délivrabilité pour +150k emails/mois. (Intégration de 45 mails en 19 langues)"
+        ],
+        "technologies": "HTML, CSS, ESL, Design system"
+      },
+      "goodwill": {
+        "title": "Goodwill",
+        "description": "Quelleenergie est une plateforme Back-office/ERP de géolocalisation, mise en relation, facturation etc.. pour les artisans francais",
+        "features": [
+          "Conception d'un moteur d’enrichissement API (Via 4 points API) pour enrichir 13k sociétés d'experts comptables afin d'obtenir les coordonnées des dirigeants de ces entreprises.",
+          "Nettoyage et segmentation des contacts",
+          "Création d'une automatisation pour prospection Linkedin, relance mail (Ruby On Rails, API Rest, script, Google Sheets)"
+        ],
+        "technologies": "Ruby On rails, Sidekiq, API tierces"
+      }
     }
   }
 }

@@ -7,7 +7,10 @@ import { ref } from 'vue'
 
 const { t } = useI18n()
 
-const projects = ['vera', 'quelleenergie', 'annuaire']
+const props = defineProps<{
+  projects: string[] | null
+  projectType: string | null
+}>()
 
 const isModalOpen = ref(false)
 const selectedProject = ref<string | null>(null)
@@ -21,19 +24,26 @@ const closeModal = () => {
   isModalOpen.value = false
   selectedProject.value = null
 }
+
+const number_title = props.projectType === 'featured_projects' ? '03. ' : '04. '
 </script>
 
 <template>
   <div :class="{ 'blur-background': isModalOpen, 'projects-container': true }">
-    <h2><span class="numbered-title">03. </span>Mes projets</h2>
+    <h2>
+      <span class="numbered-title">{{ number_title }} </span
+      >{{ t(`projects.${projectType}.headline`) }}
+    </h2>
     <div class="projects-card">
-      <div class="project-card" v-for="(project, index) in projects" :key="index">
+      <div class="project-card" v-for="(project, index) in props.projects" :key="index">
         <div class="project-card-title">
           <IconCoding class="project-icon-coding" />
-          <h3>{{ t(`projects.${project}.title`) }}</h3>
+          <h3>{{ t(`projects.${projectType}.${project}.title`) }}</h3>
         </div>
-        <p class="project-card-technologies">{{ t(`projects.${project}.technologies`) }}</p>
-        <p>{{ t(`projects.${project}.description`) }}</p>
+        <p class="project-card-technologies">
+          {{ t(`projects.${projectType}.${project}.technologies`) }}
+        </p>
+        <p>{{ t(`projects.${projectType}.${project}.description`) }}</p>
         <div class="project-card-link">
           <PrimaryButton content="Voir plus" class="project-button" @click="openModal(project)" />
         </div>
@@ -42,9 +52,10 @@ const closeModal = () => {
   </div>
 
   <ModalProject
-    v-if="selectedProject"
+    v-if="selectedProject && props.projectType"
     :show="isModalOpen"
     @close="closeModal"
     :projectName="selectedProject"
+    :projectType="props.projectType"
   />
 </template>
