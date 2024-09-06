@@ -12,9 +12,21 @@ const { t } = useI18n()
   <div class="contact-container">
     <h3 class="darker-white">Contactez moi sur ces réseaux</h3>
     <ul>
-      <li><IconGithub /></li>
-      <li><IconLinkedin /></li>
-      <li><IconMalt /></li>
+      <a href="https://github.com/Git-TM" target="_blank" rel="noopener noreferrer"
+        ><li><IconGithub /></li
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/tristan-monteiro/"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><li><IconLinkedin /></li
+      ></a>
+      <a
+        href="https://www.malt.fr/profile/tristanmonteiro"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><li><IconMalt /></li
+      ></a>
     </ul>
   </div>
 </template>
