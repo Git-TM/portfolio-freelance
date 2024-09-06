@@ -1,99 +1,101 @@
 {
-    "toggleTheme": "Changer de theme",
-    "changerLangue": "English 🇬🇧",
-    "changerTheme": "Changer Theme",
-    "banner": {
-      "headline": "Je développe des applications web et mobiles.",
-      "description": "Je suis un développeur fullstack, codant principalement sur Ruby On rails en backend et Vue.js / Ionic pour le front web et mobile."
-    },
-    "introduction": {
-        "headline": "A propos de moi",
-        "description_formation": "Ingénieur de formation, avec un stage de fin d'étude en cabinet de conseil digital/data, j'ai passé 2 ans à aider des start-ups pour accélérer leur croissance en mettant en place des systèmes automatisés (Prospection B2B, SEO, emailing..)",
-        "description_dev": "Depuis 2 ans, je me plonge dans le développement web. Au sein de l'agence Captive, je participe au développement et au maintien de plusieurs projets web et mobiles. Je code principalement en Ruby on Rails, Vue.js, Ionic."
-    },
-    "aboutme": {
-      "first_paragraph": "Je découvre le code avec C et R en école d'ingénieur. Après avoir exploré l'aspect digital, growth, automatisation pendant 3 ans au travers de mes stages et missions freelance, je décide de me plonger dans le développement web en intégrant Le Wagon l'été 2021.",
-      "second_paragraph": "Je fais quelques missions en lien avec le code, et décide de rejoindre une agence de développement web & mobile ou je pratique sur différents projets avec Ruby On Rails et Vue.js/Ionic ",
-      "third_paragraph": "Voila les technologies sur lesquels j'ai travaillé récemment",
-      "technologies": [
-        "Ruby on Rails", "Typescript", "Vue.js", "React Native"
-      ]
+  "toggleTheme": "Changer de theme",
+  "changerLangue": "English 🇬🇧",
+  "changerTheme": "Changer Theme",
+  "banner": {
+    "headline": "Je développe des applications web et mobiles.",
+    "description": "Je suis un développeur fullstack, codant principalement sur Ruby On rails en backend et Vue.js / Ionic pour le front web et mobile."
   },
-    "experiences": {
-      "captive": {
-        "name": "Captive",
-        "date_interval": "Octobre 2022 -> Juillet 2024",
-        "titre_poste": "Développeur back-end & fullstack",
-        "missions": [
-          "Pour Effy (2 Applications web rénovation énergitique), Participation à la réduction de la dette technique et résolution de bugs complexes : Maintenance applicative et montée en version : Rails 5, 6, 7, Ruby 3, Sidekiq 7,",
-          "Pour Vera (Application mobile vide dressing virtuel) Amélioration du SSO multi-plateforme (Séparation de compte / utilisateur), Création de l'algorithme de proposition des tenues et amélioration SQL, Intégrations de fonctionnalités fullstack : API Rest, intégration en Vue.js/Ionic. (Like des tenues, follow), Création de tests (Rspec, Cypress, Jest)",
-          "Autres projets : Fonctionnalités backend en TDD (tests unitaires, intégration), Optimisation des performances SQL et API, Gestion des droits & fonctionnalités admin, Ajout de soft-delete sur certains modèles clefs, Mise a jour et maintien de documentation technique"
-        ]
-      },
-      "freelance": {
-        "name": "Freelancing",
-        "date_interval": "Octobre 2020 -> Octobre 2022",
-        "titre_poste": "Développeur & growth",
-        "missions": [
-          "Pour Mister Auto : Lead entre la DSI et les équipes métiers pour l'implémentation du système transactionnel existant vers Emarsys (SAP). Définition et mise en place du design system, création d'une centaine de composants HTML/CSS avec logique métier.",
-          "Pour Goodwill : Conception d'un moteur d’enrichissement API (Via 4 points API) pour enrichir 13k sociétés d'experts comptables afin d'obtenir les coordonnées des dirigeants de ces entreprises. Nettoyage et segmentation des contacts, Création d'une automatisation pour prospection Linkedin, relance mail (Ruby On Rails, API Rest, script, Google Sheets)",
-          "Missions diverses Growth : Mise en place de système de prospection Outbound, stratégie SEO, audit SEO, formations prospection, mise en place de site web etc..."
-        ]
-      },
-      "lewagon": {
-        "name": "Le Wagon",
-        "date_interval": "Juillet 2021 -> Aout 2024",
-        "titre_poste": "Professeur Assistant",
-        "missions": [
-          "+50 jours d'accompagnement pour les élèves du Wagon et workshops (X-HEC)",
-          "Résolution de tickets, explication de concepts sur les sujets suivants : Algorithme Ruby, OOP, SQL, Front-end (HTML/CSS/JS), Ruby On Rails, Heroku, Git, Github"
-        ]
-      },
-      "cartelis": {
-        "name": "Cartelis",
-        "date_interval": "Janvier 2020 -> Septembre 2020",
-        "titre_poste": "Stage consultant digital",
-        "missions": [
-          "Mission de conseil : Lead opérationnel pour la mise en place d'un dispositif de prospection B2B : ciblage des differents segments clients, construction de base de prospects ciblés, contact automatisé multicanale (email, LinkedIn), et mise en place d'un suivi de performance : CPL : 15",
-          "Élaboration de ressources Google Sheet : Plan de taggage automatisée firebase, planning de projet digital, plan d'actions marketing",
-          "Rédaction d'articles sur des sujets datas / digitaux (comparatif d'outils, lead scoring, prospection...)"
-        ]
-      }
+  "introduction": {
+    "headline": "A propos de moi",
+    "description_formation": "Ingénieur de formation, avec un stage de fin d'étude en cabinet de conseil digital/data, j'ai passé 2 ans à aider des start-ups pour accélérer leur croissance en mettant en place des systèmes automatisés (Prospection B2B, SEO, emailing..)",
+    "description_dev": "Depuis 2 ans, je me plonge dans le développement web. Au sein de l'agence Captive, je participe au développement et au maintien de plusieurs projets web et mobiles. Je code principalement en Ruby on Rails, Vue.js, Ionic."
+  },
+  "aboutme": {
+    "first_paragraph": "Je découvre le code avec C et R en école d'ingénieur. Après avoir exploré l'aspect digital, growth, automatisation pendant 3 ans au travers de mes stages et missions freelance, je décide de me plonger dans le développement web en intégrant Le Wagon l'été 2021.",
+    "second_paragraph": "Je fais quelques missions en lien avec le code, et décide de rejoindre une agence de développement web & mobile ou je pratique sur différents projets avec Ruby On Rails et Vue.js/Ionic ",
+    "third_paragraph": "Voila les technologies sur lesquels j'ai travaillé récemment",
+    "technologies": ["Ruby on Rails", "Typescript", "Vue.js", "React Native"]
+  },
+  "experiences": {
+    "captive": {
+      "name": "Captive",
+      "date_interval": "Octobre 2022 -> Juillet 2024",
+      "titre_poste": "Développeur back-end & fullstack",
+      "missions": [
+        "Pour Effy (2 Applications web rénovation énergitique), Participation à la réduction de la dette technique et résolution de bugs complexes : Maintenance applicative et montée en version : Rails 5, 6, 7, Ruby 3, Sidekiq 7,",
+        "Pour Vera (Application mobile vide dressing virtuel) Amélioration du SSO multi-plateforme (Séparation de compte / utilisateur), Création de l'algorithme de proposition des tenues et amélioration SQL, Intégrations de fonctionnalités fullstack : API Rest, intégration en Vue.js/Ionic. (Like des tenues, follow), Création de tests (Rspec, Cypress, Jest)",
+        "Autres projets : Fonctionnalités backend en TDD (tests unitaires, intégration), Optimisation des performances SQL et API, Gestion des droits & fonctionnalités admin, Ajout de soft-delete sur certains modèles clefs, Mise a jour et maintien de documentation technique"
+      ]
     },
-    "projects": {
-      "headline": "Mes projets",
-      "featuretitle": "Mes contributions",
-      "vera": {
-        "title": "Vera",
-        "description": "Application mobile iOs et Android : Vide dressing virtuel et dimension sociale comme Instagram (Compte, Like, Follow, Partage, Profil)",
-        "features": [
-          {
-            "feature": "Ajout de fonctionnalités fullstack de la conception de l'architecture jusqu'à l'implémentation du design"
-          },
-          {
-            "feature": "Refonte de l'archi SSO multi plateforme"
-          }
-        ],
-        "technologies": "Ruby On rails, Vue.js, Ionic, GCP"
-      },    
-      "quelleenergie": {
-        "title": "quelleenergie",
-        "description": "Quelleenergie est une plateforme Back-office/ERP de géolocalisation, mise en relation, facturation etc.. pour les artisans francais",
-        "implication": [
-          "Ajout de fonctionnalités fullstack de la conception de l'architecture jusqu'à l'implémentation du design",
-          "Refonte de l'archi SSO multi plateforme"
-        ],
-        "technologies": "Ruby On rails"
-      },
-      "annuaire": {
-        "title": "annuaire",
-        "description": "Quelleenergie est une plateforme Back-office/ERP de géolocalisation, mise en relation, facturation etc.. pour les artisans francais",
-        "implication": [
-          "Ajout de fonctionnalités fullstack de la conception de l'architecture jusqu'à l'implémentation du design",
-          "Refonte de l'archi SSO multi plateforme"
-        ],
-        "technologies": "Ruby On rails"
-      }
+    "freelance": {
+      "name": "Freelancing",
+      "date_interval": "Octobre 2020 -> Octobre 2022",
+      "titre_poste": "Développeur & growth",
+      "missions": [
+        "Pour Mister Auto : Lead entre la DSI et les équipes métiers pour l'implémentation du système transactionnel existant vers Emarsys (SAP). Définition et mise en place du design system, création d'une centaine de composants HTML/CSS avec logique métier.",
+        "Pour Goodwill : Conception d'un moteur d’enrichissement API (Via 4 points API) pour enrichir 13k sociétés d'experts comptables afin d'obtenir les coordonnées des dirigeants de ces entreprises. Nettoyage et segmentation des contacts, Création d'une automatisation pour prospection Linkedin, relance mail (Ruby On Rails, API Rest, script, Google Sheets)",
+        "Missions diverses Growth : Mise en place de système de prospection Outbound, stratégie SEO, audit SEO, formations prospection, mise en place de site web etc..."
+      ]
+    },
+    "lewagon": {
+      "name": "Le Wagon",
+      "date_interval": "Juillet 2021 -> Aout 2024",
+      "titre_poste": "Professeur Assistant",
+      "missions": [
+        "+50 jours d'accompagnement pour les élèves du Wagon et workshops (X-HEC)",
+        "Résolution de tickets, explication de concepts sur les sujets suivants : Algorithme Ruby, OOP, SQL, Front-end (HTML/CSS/JS), Ruby On Rails, Heroku, Git, Github"
+      ]
+    },
+    "cartelis": {
+      "name": "Cartelis",
+      "date_interval": "Janvier 2020 -> Septembre 2020",
+      "titre_poste": "Stage consultant digital",
+      "missions": [
+        "Mission de conseil : Lead opérationnel pour la mise en place d'un dispositif de prospection B2B : ciblage des differents segments clients, construction de base de prospects ciblés, contact automatisé multicanale (email, LinkedIn), et mise en place d'un suivi de performance : CPL : 15",
+        "Élaboration de ressources Google Sheet : Plan de taggage automatisée firebase, planning de projet digital, plan d'actions marketing",
+        "Rédaction d'articles sur des sujets datas / digitaux (comparatif d'outils, lead scoring, prospection...)"
+      ]
+    }
+  },
+  "projects": {
+    "headline": "Mes projets",
+    "featuretitle": "Mes contributions",
+    "vera": {
+      "title": "Vera",
+      "description": "Application mobile iOs et Android : Vide dressing virtuel et dimension sociale comme Instagram (Compte, Like, Follow, Partage, Profil)",
+      "features": [
+        "Amélioration du SSO multi-plateforme (Séparation de compte / utilisateur)",
+        "Création de l'algorithme de proposition des tenues et amélioration SQL",
+        "Intégrations de fonctionnalités fullstack : API Rest, intégration en Vue.js/Ionic. (Like des tenues, follow)",
+        "Création de tests (Rspec, Cypress, Jest)"
+      ],
+      "technologies": "Ruby On rails, Vue.js, Ionic, GCP"
+    },
+    "quelleenergie": {
+      "title": "quelleenergie",
+      "description": "Quelleenergie est une plateforme Back-office/ERP de géolocalisation, mise en relation, facturation etc.. pour les artisans francais",
+      "features": [
+        "Ajout de fonctionnalités fullstack de la conception de l'architecture jusqu'à l'implémentation du design",
+        "Ajout de fonctionnalités back-end, admin",
+        "Maintenance applicative et montée en version : Rails 5, 6, 7, Ruby 3, Sidekiq 7 ...",
+        "Migrations de données avec de forts impacts business (centaine de milliers d'entrée)"
+      ],
+      "technologies": "Ruby On rails"
+    },
+    "annuaire": {
+      "title": "annuaire",
+      "description": "Application RoR de MAJ quotidienne de l'ensemble des 300k+ artisans de France, leurs sociétés, certifications (https://artisans.quelleenergie.fr/)",
+      "features": [
+        "Ajout de fonctionnalités fullstack de la conception de l'architecture jusqu'à l'implémentation du design",
+        "Ajout de fonctionnalités back-end, admin",
+        "Maintenance applicative et montée en version : Rails 5, 6, 7, Ruby 3, Sidekiq 7 ...",
+        "Migrations de données avec de forts impacts business (centaine de milliers d'entrée)",
+        "Optimisation des requêtes SQL sur PostgreSQL et MySQL (géolocalisation/matching, exports de données)",
+        "Suivi proactif des bugs (Datadog, GCP) et correction de bugs complexes (APIs, synchro outils, CRON & Jobs) avec les équipes internes",
+        "Participation à la réduction de la dette technique : refonte des logs, et amélioration des specs API pour rendre les équipes plus autonomes."
+      ],
+      "technologies": "Ruby On rails"
     }
   }
-  
+}

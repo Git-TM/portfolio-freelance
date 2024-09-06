@@ -2,16 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400..700;1,400..700&family=Roboto+Slab:wght@100..900&display=swap');
 
 .light-theme {
-    --background-color: #eaedf9;
-    --text-color: black;
+  --background-color: #dee4e7;
+  --text-color: black;
 }
 
 .dark-theme {
-    --background-color: #020c1b;
-    --text-color: #8892B0;
+  --background-color: #020c1b;
+  --text-color: #8892b0;
 }
 
-h1, h2 {
+h1,
+h2 {
   text-align: left;
   font-weight: 400;
 }
@@ -24,16 +25,16 @@ h2 {
 }
 
 h3 {
- font-size: 1.75rem;
- font-weight: 200;
+  font-size: 1.75rem;
+  font-weight: 200;
 }
 
 h4 {
-    font-size: 1.125rem;
+  font-size: 1.125rem;
 }
 
 .primary-color-font {
-    color: $primary-color;
+  color: $primary-color;
 }
 
 .darker-white {
@@ -48,15 +49,29 @@ h4 {
   color: $primary-color;
 }
 
-
 .main-container {
   width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+li::before {
+  padding-right: 1rem;
+  content: '▹';
+  color: $primary-color;
+  font-weight: bold;
 }
 
 body {
   margin: 0;
   font-size: 1rem;
-  font-family: "Finlandica", sans-serif;
+  font-family: 'Finlandica', sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
