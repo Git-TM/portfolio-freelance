@@ -1,6 +1,7 @@
 .aboutme-content {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 
   & .aboutme-description {
     width: 20rem;
@@ -8,20 +9,17 @@
     & ul {
       padding: 0px;
       margin: 0px;
-      list-style: none;
       width: 100%;
     }
-  
+
     & li {
       margin-bottom: 1rem;
     }
-  
+
     & li::before {
       padding-right: 1rem;
-      content: "▹";
-      color: $primary-color;
       font-weight: bold;
-    } 
+    }
   }
 }
 
@@ -34,7 +32,7 @@
     border: 1px solid $primary-color;
   }
 
-    & .aboutme-background {
+  & .aboutme-background {
     width: 20rem;
     height: 20rem;
     border-bottom: 1px solid $primary-color;
@@ -52,7 +50,7 @@
     margin: 0 auto;
     text-align: center;
 
-    &  .aboutme-description {
+    & .aboutme-description {
       margin-bottom: 2rem;
       width: 100%;
     }

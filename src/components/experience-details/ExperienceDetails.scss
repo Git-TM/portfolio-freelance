@@ -8,11 +8,11 @@
     & ul {
       list-style: none;
       display: block;
-  
+
       & li {
         padding: 1rem 2rem;
         color: $primary-color;
-        border-left: .5px solid grey;
+        border-left: 0.5px solid grey;
       }
 
       & .menu-selected-value {
@@ -24,16 +24,14 @@
   }
 
   & .experiences-details {
-
     & .experiences-details-title h3 {
       margin-bottom: 0;
     }
-    
+
     & .experiences-details-missions {
       & ul {
         padding: 0px;
         margin: 0px;
-        list-style: none;
         width: 100%;
       }
 
@@ -43,10 +41,8 @@
 
       & li::before {
         padding-right: 1rem;
-        content: "▹";
-        color: $primary-color;
         font-weight: bold;
-      } 
+      }
     }
   }
 }
@@ -62,7 +58,7 @@
 
         & li {
           border-left: none;
-          border-bottom: .5px solid grey;
+          border-bottom: 0.5px solid grey;
         }
 
         & .menu-selected-value {
