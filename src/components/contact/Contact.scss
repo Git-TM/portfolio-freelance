@@ -28,3 +28,10 @@
 .contact-content {
   height: 10rem;
 }
+
+@media (max-width: 480px) {
+  .contact-container ul li svg {
+    width: 48px;
+    height: 48px;
+  }
+}
