@@ -1,10 +1,9 @@
 <script setup lang="ts">
-  import { useI18n } from 'vue-i18n';
-  
-  const { t, tm } = useI18n();
-  
+import { useI18n } from 'vue-i18n'
+
+const { t, tm } = useI18n()
 </script>
-  
+
 <template>
   <div class="aboutme-container">
     <h2><span class="numbered-title">01. </span>A propos</h2>
