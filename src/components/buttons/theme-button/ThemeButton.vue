@@ -1,12 +1,14 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { useThemeStore } from '@/stores/theme'
 
-const userTheme = ref('dark-theme');
+const themeStore = useThemeStore()
 
-const toggleTheme = () => {
-  userTheme.value = userTheme.value === 'dark-theme' ? 'light-theme' : 'dark-theme';
-  document.documentElement.className = userTheme.value;
-};
+const { currentTheme } = themeStore
+
+const handleToggleTheme = () => {
+  const newTheme = themeStore.currentTheme.value === 'dark-theme' ? 'light-theme' : 'dark-theme'
+  themeStore.setNewTheme(newTheme)
+}
 </script>
 
 <template>
@@ -15,15 +17,18 @@ const toggleTheme = () => {
       type="checkbox"
       id="theme-toggle"
       class="switch-checkbox"
-      @change="toggleTheme"
-      :checked="userTheme === 'dark-theme'"
+      @change="handleToggleTheme"
+      :checked="currentTheme === 'dark-theme'"
     />
     <label for="theme-toggle" class="switch-label">
       <div class="switch-background">
         <span class="icon-moon">🌙</span>
         <span class="icon-sun">☀️</span>
       </div>
-      <div class="switch-toggle" :class="{ 'switch-toggle-checked': userTheme === 'dark-theme' }"></div>
+      <div
+        class="switch-toggle"
+        :class="{ 'switch-toggle-checked': currentTheme === 'dark-theme' }"
+      ></div>
     </label>
   </div>
 </template>

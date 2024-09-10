@@ -9,20 +9,21 @@ import InitialLoader from '@/components/initial-loader/InitialLoader'
 import Contact from '@/components/contact/Contact'
 import { useI18n } from 'vue-i18n'
 import images from '@/assets/images/images-project/images'
+import { useThemeStore } from '@/stores/theme'
 
 const { locale } = useI18n()
 const currentLocale = ref(locale.value)
-const currentTheme = ref('dark-theme')
 const currentlyLoading = ref(true)
+
+const themeStore = useThemeStore()
 
 const handleSwitchLanguage = (newLocale: string) => {
   currentLocale.value = newLocale
   locale.value = newLocale
 }
 
-const handleToggleTheme = () => {
-  currentTheme.value = currentTheme.value === 'light-theme' ? 'dark-theme' : 'light-theme'
-  document.body.className = currentTheme.value
+const setInitialTheme = () => {
+  themeStore.setInitialTheme()
 }
 
 const featured_projects = ['vera', 'quelleenergie', 'annuaire']
@@ -36,6 +37,7 @@ const preloadImages = () => {
 }
 
 onMounted(() => {
+  setInitialTheme()
   preloadImages()
   setTimeout(() => {
     currentlyLoading.value = false
@@ -46,11 +48,7 @@ onMounted(() => {
 <template>
   <InitialLoader v-if="currentlyLoading" />
   <div class="main-container" v-else>
-    <NavbarMain
-      @switch-language="handleSwitchLanguage"
-      @toggle-theme="handleToggleTheme"
-      :current-locale="currentLocale"
-    />
+    <NavbarMain @switch-language="handleSwitchLanguage" :current-locale="currentLocale" />
     <BannerAccueil />
     <AboutMe />
     <ExperienceDetails />

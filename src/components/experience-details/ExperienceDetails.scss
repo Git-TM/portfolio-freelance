@@ -11,7 +11,7 @@
 
       & li {
         padding: 1rem 2rem;
-        color: $primary-color;
+        color: var(--primary-color);
         border-left: 0.5px solid grey;
       }
 
@@ -20,9 +20,9 @@
       }
 
       & .menu-selected-value {
-        border-left: solid 2px $primary-color;
+        border-left: solid 2px var(--primary-color);
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
       }
     }
   }
@@ -66,7 +66,7 @@
         }
 
         & .menu-selected-value {
-          border-bottom: solid 2px $primary-color;
+          border-bottom: solid 2px var(--primary-color);
           border-left: none;
         }
       }

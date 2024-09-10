@@ -2,13 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400..700;1,400..700&family=Roboto+Slab:wght@100..900&display=swap');
 
 .light-theme {
-  --background-color: #dee4e7;
-  --text-color: black;
+  --background-color: #b6d1de;
+  --text-color: #3a3f4dfa;
+  --primary-color: #ed6a5a;
+
+  & h2 {
+    color: #36454f;
+  }
+
+  .brighter-title {
+    color: #5b6170;
+  }
 }
 
 .dark-theme {
   --background-color: #020c1b;
   --text-color: #8892b0;
+  --primary-color: #3990ff;
 }
 
 h1,
@@ -34,19 +44,19 @@ h4 {
 }
 
 .primary-color-font {
-  color: $primary-color;
+  color: var(--primary-color);
 }
 
-.darker-white {
+.darker-title {
   color: $white-dark;
 }
 
-.brighter-white {
+.brighter-title {
   color: $white-text;
 }
 
 .numbered-title {
-  color: $primary-color;
+  color: var(--primary-color);
 }
 
 .main-container {
@@ -65,7 +75,7 @@ li {
 li::before {
   padding-right: 1rem;
   content: '▹';
-  color: $primary-color;
+  color: var(--primary-color);
   font-weight: bold;
 }
 
@@ -84,7 +94,7 @@ button {
   width: 4rem;
   height: 2rem;
   margin: auto 0;
-  background-color: $primary-color;
+  background-color: var(--primary-color);
   color: white;
   border: none;
   border-radius: 2rem;

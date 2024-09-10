@@ -19,7 +19,7 @@
 
   &:before {
     z-index: 2;
-    background: $primary-color;
+    background: var(--primary-color);
     animation: loader-before 2s ease-in-out infinite;
   }
 
