@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import IconGithub from '@/assets/images/icons/icon-github.svg'
-import IconLinkedin from '@/assets/images/icons/icon-linkedin.svg'
-import IconMalt from '@/assets/images/icons/icon-malt.svg'
+import IconGithub from '@/assets/images/icons/contact/icon-github.svg'
+import IconLinkedin from '@/assets/images/icons/contact/icon-linkedin.svg'
+import IconMalt from '@/assets/images/icons/contact/icon-malt.svg'
 
 const { t } = useI18n()
 </script>

@@ -6,6 +6,7 @@ import AboutMe from '@/components/about-me/AboutMe'
 import ExperienceDetails from '@/components/experience-details/ExperienceDetails'
 import DetailProjets from '@/components/detail-projets/DetailProjets'
 import InitialLoader from '@/components/initial-loader/InitialLoader'
+import TimelineFormation from '@/components/timeline-formation/TimelineFormation'
 import Contact from '@/components/contact/Contact'
 import { useI18n } from 'vue-i18n'
 import images from '@/assets/images/images-project/images'
@@ -26,6 +27,7 @@ const setInitialTheme = () => {
   themeStore.setInitialTheme()
 }
 
+const formations = ['lewagon', 'second_ebi', 'first_ebi']
 const featured_projects = ['vera', 'quelleenergie', 'annuaire']
 const personal_projects = ['portfolio', 'misterauto', 'goodwill']
 
@@ -50,6 +52,7 @@ onMounted(() => {
   <div class="main-container" v-else>
     <NavbarMain @switch-language="handleSwitchLanguage" :current-locale="currentLocale" />
     <BannerAccueil />
+    <TimelineFormation :formations="formations" />
     <AboutMe />
     <ExperienceDetails />
     <DetailProjets :projects="featured_projects" , project-type="featured_projects" />

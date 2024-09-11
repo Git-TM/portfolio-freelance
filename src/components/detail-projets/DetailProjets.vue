@@ -25,7 +25,7 @@ const closeModal = () => {
   selectedProject.value = null
 }
 
-const number_title = props.projectType === 'featured_projects' ? '03. ' : '04. '
+const number_title = props.projectType === 'featured_projects' ? '04. ' : '05. '
 </script>
 
 <template>

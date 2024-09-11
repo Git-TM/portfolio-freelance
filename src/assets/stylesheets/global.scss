@@ -73,7 +73,6 @@ li {
 }
 
 li::before {
-  padding-right: 1rem;
   content: '▹';
   color: var(--primary-color);
   font-weight: bold;
@@ -101,6 +100,7 @@ button {
 }
 
 .aboutme-container,
+.timeline-container,
 .banner-container,
 .experiences-container,
 .projects-container,
@@ -110,6 +110,7 @@ button {
 
 @media (max-width: 768px) {
   .aboutme-container,
+  .timeline-container,
   .banner-container,
   .experiences-container,
   .projects-container,
