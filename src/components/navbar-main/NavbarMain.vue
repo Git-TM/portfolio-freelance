@@ -6,7 +6,7 @@ import { useConfigStore } from '@/stores/config'
 const configStore = useConfigStore()
 const currentLocale = computed(() => configStore.config.locale)
 
-const languages = ['fr', 'en', 'es']
+const languages = ['fr', 'us', 'es']
 const isDropdownOpen = ref(false)
 
 const switchLanguage = (lang: string) => {
@@ -25,11 +25,11 @@ const toggleDropdown = () => {
     <div class="navbar-right-content">
       <div class="dropdown">
         <button class="dropdown-button" @click="toggleDropdown">
-          {{ currentLocale.toUpperCase() }}
+          <span :class="`fi fi-${currentLocale}`"></span>
         </button>
         <div v-if="isDropdownOpen" class="dropdown-menu">
           <button v-for="lang in languages" :key="lang" @click="switchLanguage(lang)">
-            {{ lang.toUpperCase() }}
+            <span :class="`fi fi-${lang}`"></span>
           </button>
         </div>
       </div>

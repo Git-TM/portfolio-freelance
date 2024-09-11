@@ -1,15 +1,17 @@
-import { createI18n, type I18nOptions } from 'vue-i18n'
+import { createI18n } from 'vue-i18n'
 
-import en from '../../locales/en.json'
+import us from '../../locales/us.json'
+import sp from '../../locales/sp.json'
 import fr from '../../locales/fr.json'
 
 const i18n = createI18n({
   legacy: false, // utilisez la composition API
   locale: 'fr', // langue par défaut
   messages: {
-    en,
+    us,
+    sp,
     fr
-  },
-});
+  }
+})
 
-export default i18n;
+export default i18n
