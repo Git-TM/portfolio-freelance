@@ -17,6 +17,26 @@
     "third_paragraph": "Voila les technologies sur lesquels j'ai travaillé récemment",
     "technologies": ["Ruby on Rails", "Typescript", "Vue.js", "React Native"]
   },
+  "formations": {
+    "lewagon": {
+      "image": "lewagon",
+      "date": "2021",
+      "title": "Formation Développeur Web",
+      "details": "Bootcamp de 9 semaines pour apprendre les bases du développement web : Algorithmie, Ruby on Rails, SQL, JS .."
+    },
+    "second_ebi": {
+      "image": "ebi",
+      "date": "2018 - 2020",
+      "title": "Cycle Ingénieur Entrepreunariat",
+      "details": "Innovation, Lancement de Projet (Sel de neige écologique), Marketing Digital .."
+    },
+    "first_ebi": {
+      "image": "ebi",
+      "date": "2015 - 2018",
+      "title": "Prépa Ingénieur Biotechnologie",
+      "details": "Biosciences, Maths, Physique, Analyse de données en R, Programmation en C++"
+    }
+  },
   "experiences": {
     "captive": {
       "name": "Captive",
