@@ -1,31 +1,38 @@
 <script setup lang="ts">
-import { watch } from 'vue'
-import { useI18n } from 'vue-i18n'
+import { computed, ref } from 'vue'
 import ThemeButton from '../buttons/theme-button/ThemeButton'
+import { useConfigStore } from '@/stores/config'
 
-const props = defineProps<{ currentLocale: string }>()
-const emit = defineEmits(['switch-language', 'toggle-theme'])
+const configStore = useConfigStore()
+const currentLocale = computed(() => configStore.config.locale)
 
-const { locale } = useI18n()
+const languages = ['fr', 'en', 'es']
+const isDropdownOpen = ref(false)
 
-const switchLanguage = () => {
-  const newLocale = props.currentLocale === 'fr' ? 'en' : 'fr'
-  emit('switch-language', newLocale)
+const switchLanguage = (lang: string) => {
+  isDropdownOpen.value = false
+  configStore.setLocale(lang)
 }
 
-watch(
-  () => props.currentLocale,
-  (newLocale) => {
-    locale.value = newLocale
-  }
-)
+const toggleDropdown = () => {
+  isDropdownOpen.value = !isDropdownOpen.value
+}
 </script>
 
 <template>
   <div class="navbar-container">
     <img alt="Vue logo" class="navbar-logo" src="@/assets/images/icons/icon-logo.png" />
     <div class="navbar-right-content">
-      <button @click="switchLanguage">{{ currentLocale === 'fr' ? 'US' : 'FR' }}</button>
+      <div class="dropdown">
+        <button class="dropdown-button" @click="toggleDropdown">
+          {{ currentLocale.toUpperCase() }}
+        </button>
+        <div v-if="isDropdownOpen" class="dropdown-menu">
+          <button v-for="lang in languages" :key="lang" @click="switchLanguage(lang)">
+            {{ lang.toUpperCase() }}
+          </button>
+        </div>
+      </div>
       <ThemeButton />
     </div>
   </div>

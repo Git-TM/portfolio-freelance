@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { useThemeStore } from '@/stores/theme'
+import { useConfigStore } from '@/stores/config'
+import { computed } from 'vue'
 
-const themeStore = useThemeStore()
-
-const { currentTheme } = themeStore
+const configStore = useConfigStore()
+const currentTheme = computed(() => configStore.config.theme)
 
 const handleToggleTheme = () => {
-  const newTheme = themeStore.currentTheme.value === 'dark-theme' ? 'light-theme' : 'dark-theme'
-  themeStore.setNewTheme(newTheme)
+  const newTheme = currentTheme.value === 'dark-theme' ? 'light-theme' : 'dark-theme'
+  configStore.setTheme(newTheme)
 }
 </script>
 

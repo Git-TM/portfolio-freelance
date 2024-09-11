@@ -8,28 +8,19 @@ import DetailProjets from '@/components/detail-projets/DetailProjets'
 import InitialLoader from '@/components/initial-loader/InitialLoader'
 import TimelineFormation from '@/components/timeline-formation/TimelineFormation'
 import Contact from '@/components/contact/Contact'
-import { useI18n } from 'vue-i18n'
 import images from '@/assets/images/images-project/images'
-import { useThemeStore } from '@/stores/theme'
+import { useConfigStore } from '@/stores/config'
 
-const { locale } = useI18n()
-const currentLocale = ref(locale.value)
+const configStore = useConfigStore()
+
 const currentlyLoading = ref(true)
-
-const themeStore = useThemeStore()
-
-const handleSwitchLanguage = (newLocale: string) => {
-  currentLocale.value = newLocale
-  locale.value = newLocale
-}
-
-const setInitialTheme = () => {
-  themeStore.setInitialTheme()
-}
-
 const formations = ['lewagon', 'second_ebi', 'first_ebi']
 const featured_projects = ['vera', 'quelleenergie', 'annuaire']
 const personal_projects = ['portfolio', 'misterauto', 'goodwill']
+
+const setInitialConfig = () => {
+  configStore.setInitialConfig()
+}
 
 const preloadImages = () => {
   Object.values(images).forEach((src) => {
@@ -39,7 +30,7 @@ const preloadImages = () => {
 }
 
 onMounted(() => {
-  setInitialTheme()
+  setInitialConfig()
   preloadImages()
   setTimeout(() => {
     currentlyLoading.value = false
@@ -49,8 +40,8 @@ onMounted(() => {
 
 <template>
   <InitialLoader v-if="currentlyLoading" />
-  <div class="main-container" v-else>
-    <NavbarMain @switch-language="handleSwitchLanguage" :current-locale="currentLocale" />
+  <div class="main-container">
+    <NavbarMain />
     <BannerAccueil />
     <TimelineFormation :formations="formations" />
     <AboutMe />
