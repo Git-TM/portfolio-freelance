@@ -82,3 +82,13 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .timeline-detail {
+    flex-direction: column;
+  }
+
+  .timeline-description {
+    text-align: center;
+  }
+}
