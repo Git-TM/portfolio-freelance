@@ -17,7 +17,7 @@ const configStore = useConfigStore()
 const currentlyLoading = ref(true)
 const formations = ['first_ebi', 'second_ebi', 'lewagon']
 const featured_projects = ['vera', 'quelleenergie', 'annuaire', 'misterauto', 'goodwill']
-const personal_projects = ['portfolio']
+const personal_projects = ['portfolio', 'script']
 
 const setInitialConfig = () => {
   configStore.setInitialConfig()
