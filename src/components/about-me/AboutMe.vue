@@ -6,7 +6,7 @@ const { t, tm } = useI18n()
 
 <template>
   <div class="aboutme-container">
-    <h2><span class="numbered-title">02. </span>A propos</h2>
+    <h2><span class="numbered-title">02. </span>{{ t('aboutme.headline') }}</h2>
     <div class="aboutme-content">
       <div class="aboutme-description">
         <p>{{ t('aboutme.first_paragraph') }}</p>

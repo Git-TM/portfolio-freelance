@@ -1,43 +1,153 @@
 {
-    "toggleTheme": "Change Theme",
-    "changerLangue": "Francais 🇫🇷",
-    "changerTheme": "Changer Theme",
-    "banner": {
-      "headline": "Hi there,",
-      "subheadline": "I'm a passionate fullstack web developer, and I mainly use Ruby On Rails and Vue.js"
+  "banner": {
+    "presentation": "Hello, I am",
+    "headline": "I develop web and mobile applications.",
+    "description": "I am a software developer who has worked with clients ranging from startups to small businesses, on applications ranging from energy renovation to virtual second-hand clothing platforms."
+  },
+  "aboutme": {
+    "headline": "About",
+    "first_paragraph": "After exploring the field of digital, growth, and automation for 3 years by supporting startups, I decided to dive into web development by joining Le Wagon in the summer of 2021.",
+    "second_paragraph": "I joined a web & mobile development agency where I work on various projects using Ruby On Rails and Vue.js/Ionic.",
+    "third_paragraph": "Here are the technologies I have worked with recently",
+    "technologies": ["Ruby on Rails", "Typescript", "Vue.js", "React Native"]
+  },
+  "formations": {
+    "headline": "Education and Training",
+    "lewagon": {
+      "image": "lewagon",
+      "date": "2021",
+      "title": "Web Development Bootcamp",
+      "details": "Intensive training in Ruby on Rails, SQL, JS, and building a web project"
     },
-    "projects": {
+    "second_ebi": {
+      "image": "ebi",
+      "date": "2018 - 2020",
+      "title": "Biotech & Entrepreneurship Engineering",
+      "details": "Project launch & competitions, Innovation, Marketing (Digital, B2B)"
+    },
+    "first_ebi": {
+      "image": "ebi",
+      "date": "2015 - 2018",
+      "title": "Biotechnology Engineering Preparatory Program",
+      "details": "Biosciences, Math, Physics, Statistics (R), Programming (C++)"
+    }
+  },
+  "experiences": {
+    "headline": "My Experiences",
+    "captive": {
+      "name": "Captive",
+      "date_interval": "October 2022 -> July 2024",
+      "titre_poste": "Back-end & Fullstack Developer",
+      "missions": [
+        "For Effy (2 energy renovation web applications), contributed to reducing technical debt and solving complex bugs: Application maintenance and version upgrades: Rails 5, 6, 7, Ruby 3, Sidekiq 7.",
+        "For Vera (Virtual wardrobe mobile app), improved multi-platform SSO (Account/User separation), created the outfit suggestion algorithm and improved SQL performance, integrated fullstack features: Rest API, Vue.js/Ionic integration (Outfit likes, follows), created tests (Rspec, Cypress, Jest).",
+        "Other projects: Backend features using TDD (unit and integration tests), SQL and API performance optimization, rights management & admin features, added soft-delete on key models, updated and maintained technical documentation."
+      ]
+    },
+    "freelance": {
+      "name": "Freelancing",
+      "date_interval": "October 2020 -> October 2022",
+      "titre_poste": "Developer & Growth",
+      "missions": [
+        "For Mister Auto: Led between the IT department and business teams for the implementation of the existing transactional system to Emarsys (SAP). Defined and implemented the design system, created a hundred HTML/CSS components with business logic.",
+        "For Goodwill: Designed an API enrichment engine (via 4 API endpoints) to enrich 13k accounting firms to obtain the contact details of their executives. Cleaned and segmented contacts, created automation for LinkedIn prospecting, email follow-ups (Ruby On Rails, Rest API, script, Google Sheets).",
+        "Various Growth missions: Set up outbound prospecting systems, SEO strategy, SEO audits, prospecting training, website setup, etc."
+      ]
+    },
+    "lewagon": {
+      "name": "Le Wagon",
+      "date_interval": "July 2021 -> August 2024",
+      "titre_poste": "Assistant Teacher",
+      "missions": [
+        "Over 50 days of support for Le Wagon students and workshops (X-HEC).",
+        "Resolved tickets and explained concepts on the following topics: Ruby Algorithms, OOP, SQL, Front-end (HTML/CSS/JS), Ruby On Rails, Heroku, Git, Github."
+      ]
+    },
+    "cartelis": {
+      "name": "Cartelis",
+      "date_interval": "January 2020 -> September 2020",
+      "titre_poste": "Digital Consulting Intern",
+      "missions": [
+        "Consulting mission: Operational lead for the implementation of a B2B prospecting system: targeting various customer segments, building targeted prospect databases, automated multi-channel contact (email, LinkedIn), and setting up performance tracking: CPL: 15.",
+        "Developed Google Sheet resources: Automated Firebase tagging plan, digital project planning, marketing action plan.",
+        "Wrote articles on data/digital topics (tool comparisons, lead scoring, prospecting, etc.)."
+      ]
+    }
+  },
+  "projects": {
+    "calltoaction": "See more",
+    "featured_projects": {
+      "headline": "My Professional Projects",
       "vera": {
         "title": "Vera",
-        "description": "English Application mobile iOs et Android : Vide dressing virtuel et dimension sociale comme Instagram (Compte, Like, Follow, Partage, Profil)",
+        "description": "Mobile app for iOS and Android: Virtual wardrobe with a social dimension similar to Instagram (Account, Like, Follow, Share, Profile)",
         "features": [
-          {
-            "feature": "English Ajout de fonctionnalités fullstack de la conception de l'architecture jusqu'à l'implémentation du design"
-          },
-          {
-            "feature": "English Refonte de l'archi SSO multi plateforme"
-          }
+          "Improved multi-platform SSO (Account/User separation)",
+          "Created the outfit suggestion algorithm (SQL performance optimization)",
+          "Integrated fullstack features: Rest API, Vue.js/Ionic integration (Outfit likes, follows, outfits)",
+          "Created tests (Rspec, Cypress, Jest)"
         ],
-        "technologies": "Ruby On rails, Vue.js, Ionic, GCP"
-      },    
+        "technologies": "Ruby On Rails, Vue.js, Ionic, GCP"
+      },
       "quelleenergie": {
-        "title": "quelleenergie",
-        "description": "Quelleenergie est une plateforme Back-office/ERP de géolocalisation, mise en relation, facturation etc.. pour les artisans francais",
-        "implication": [
-          "Ajout de fonctionnalités fullstack de la conception de l'architecture jusqu'à l'implémentation du design",
-          "Refonte de l'archi SSO multi plateforme"
+        "title": "Quelleenergie",
+        "description": "Quelleenergie is a Back-office/ERP platform for French artisans involving geolocation, matchmaking, billing, etc.",
+        "features": [
+          "SQL query optimization on PostgreSQL and MySQL (geolocation/matching, data exports)",
+          "Revamped server logs and API documentation for tech teams",
+          "Data migrations with significant business impacts (hundreds of thousands of entries)",
+          "Added fullstack features"
         ],
-        "technologies": "Ruby On rails"
+        "technologies": "Ruby On Rails, JS"
       },
       "annuaire": {
-        "title": "annuaire",
-        "description": "Quelleenergie est une plateforme Back-office/ERP de géolocalisation, mise en relation, facturation etc.. pour les artisans francais",
-        "implication": [
-          "Ajout de fonctionnalités fullstack de la conception de l'architecture jusqu'à l'implémentation du design",
-          "Refonte de l'archi SSO multi plateforme"
+        "title": "Annuaire",
+        "description": "Ruby on Rails application for daily updates of 300k+ French artisans, their companies, certifications (https://artisans.quelleenergie.fr/)",
+        "features": [
+          "Reduced technical debt (Table size reduction, API documentation overhaul, etc.)",
+          "Proactive bug monitoring (Datadog, GCP) and correction of complex bugs (APIs, tool synchronization, CRON & Jobs)",
+          "Added back-end and admin features",
+          "Application maintenance and version upgrades: Rails 5.2 to 7, Ruby 3",
+          "Data migrations with significant business impacts (hundreds of thousands of entries)"
         ],
-        "technologies": "Ruby On rails"
+        "technologies": "Ruby On Rails, ActiveAdmin"
+      },
+      "misterauto": {
+        "title": "Mister Auto",
+        "description": "Consultant for migrating the existing transactional system to Emarsys (SAP)",
+        "features": [
+          "Coordinated business rules between IT and business teams to handle country/product-specificities, etc.",
+          "Wrote technical documentation and provided training for 15 people to make teams autonomous",
+          "Result: 99.7% deliverability for over 150k emails/month (Integration of 45 emails in 19 languages)"
+        ],
+        "technologies": "HTML, CSS, ESL, Design system"
+      },
+      "goodwill": {
+        "title": "Goodwill",
+        "description": "Goodwill is a digital service company for accounting firms",
+        "features": [
+          "Designed an API enrichment engine (Via 4 API endpoints) to enrich 13k accounting firms and obtain the contact details of their executives",
+          "Cleaned and segmented contacts",
+          "Created automation for LinkedIn prospecting and email follow-ups (Ruby On Rails, Rest API, script, Google Sheets)"
+        ],
+        "technologies": "Ruby On Rails, Sidekiq, Third-party APIs"
+      }
+    },
+    "personal_projects": {
+      "headline": "My Personal Projects",
+      "portfolio": {
+        "title": "Portfolio",
+        "description": "A simple portfolio showcasing my journey and projects",
+        "features": [
+          "Translation using vue-i18n to define all site content, auto translation button",
+          "Implemented responsive design for mobile"
+        ],
+        "technologies": "Vue.js, Typescript"
       }
     }
+  },
+  "footer": {
+    "first_text": "Made in Paris in 2024 by Tristan Monteiro",
+    "second_text": "Images generated with Bing AI"
   }
-  
+}

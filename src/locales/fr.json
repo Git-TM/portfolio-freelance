@@ -1,40 +1,39 @@
 {
   "banner": {
+    "presentation": "Bonjour, je suis",
     "headline": "Je développe des applications web et mobiles.",
-    "description": "Je suis un développeur fullstack, codant principalement sur Ruby On rails en backend et Vue.js / Ionic pour le front web et mobile."
-  },
-  "introduction": {
-    "headline": "A propos de moi",
-    "description_formation": "Ingénieur de formation, avec un stage de fin d'étude en cabinet de conseil digital/data, j'ai passé 2 ans à aider des start-ups pour accélérer leur croissance en mettant en place des systèmes automatisés (Prospection B2B, SEO, emailing..)",
-    "description_dev": "Depuis 2 ans, je me plonge dans le développement web. Au sein de l'agence Captive, je participe au développement et au maintien de plusieurs projets web et mobiles. Je code principalement en Ruby on Rails, Vue.js, Ionic."
+    "description": "Je suis développeur logiciel ayant travaillé pour des clients allant de la start-up à la PME, sur des applications allant de la rénovation énérgétique au vide-dressing virtuel"
   },
   "aboutme": {
-    "first_paragraph": "Je découvre le code avec C et R en école d'ingénieur. Après avoir exploré l'aspect digital, growth, automatisation pendant 3 ans au travers de mes stages et missions freelance, je décide de me plonger dans le développement web en intégrant Le Wagon l'été 2021.",
-    "second_paragraph": "Je fais quelques missions en lien avec le code, et décide de rejoindre une agence de développement web & mobile ou je pratique sur différents projets avec Ruby On Rails et Vue.js/Ionic ",
+    "headline": "A propos",
+    "first_paragraph": "Après avoir exploré le domaine du digital, growth & automatisation pendant 3 ans au travers en accompagnant des start-ups, je décide de me plonger dans le développement web en intégrant Le Wagon l'été 2021.",
+    "second_paragraph": "Je rejoins une agence de développement web & mobile ou je pratique sur différents projets avec Ruby On Rails et Vue.js/Ionic ",
     "third_paragraph": "Voila les technologies sur lesquels j'ai travaillé récemment",
     "technologies": ["Ruby on Rails", "Typescript", "Vue.js", "React Native"]
   },
   "formations": {
+    "headline": "Etudes et formations",
     "lewagon": {
       "image": "lewagon",
       "date": "2021",
-      "title": "Formation Développeur Web",
-      "details": "Bootcamp de 9 semaines pour apprendre les bases du développement web : Algorithmie, Ruby on Rails, SQL, JS .."
+      "title": "Bootcamp Développement Web",
+      "details": "Formation intensive en Ruby on Rails, SQL, JS et création d'un projet web"
     },
     "second_ebi": {
       "image": "ebi",
       "date": "2018 - 2020",
-      "title": "Cycle Ingénieur Entrepreunariat",
-      "details": "Innovation, Lancement de Projet (Sel de neige écologique), Marketing Digital .."
+      "title": "Ingénieur Biotech & Entrepreunariat",
+      "details": "Lancement de projet & concours, Innovation, Marketing (Digital, B2B)"
     },
     "first_ebi": {
       "image": "ebi",
       "date": "2015 - 2018",
       "title": "Prépa Ingénieur Biotechnologie",
-      "details": "Biosciences, Maths, Physique, Analyse de données en R, Programmation en C++"
+      "details": "Biosciences, Maths, Physique, Statistiques (R), Programmation (C++)"
     }
   },
   "experiences": {
+    "headline": "Mes expériences",
     "captive": {
       "name": "Captive",
       "date_interval": "Octobre 2022 -> Juillet 2024",
@@ -76,6 +75,7 @@
     }
   },
   "projects": {
+    "calltoaction": "Voir plus",
     "featured_projects": {
       "headline": "Mes projets professionels",
       "vera": {
@@ -83,48 +83,34 @@
         "description": "Application mobile iOs et Android : Vide dressing virtuel et dimension sociale comme Instagram (Compte, Like, Follow, Partage, Profil)",
         "features": [
           "Amélioration du SSO multi-plateforme (Séparation de compte / utilisateur)",
-          "Création de l'algorithme de proposition des tenues et amélioration SQL",
-          "Intégrations de fonctionnalités fullstack : API Rest, intégration en Vue.js/Ionic. (Like des tenues, follow)",
+          "Création de l'algorithme de proposition des tenues (Performance SQL)",
+          "Intégrations de fonctionnalités fullstack : API Rest, intégration en Vue.js/Ionic. (Like des tenues, follow, tenues)",
           "Création de tests (Rspec, Cypress, Jest)"
         ],
         "technologies": "Ruby On rails, Vue.js, Ionic, GCP"
       },
       "quelleenergie": {
-        "title": "quelleenergie",
+        "title": "Quelleenergie",
         "description": "Quelleenergie est une plateforme Back-office/ERP de géolocalisation, mise en relation, facturation etc.. pour les artisans francais",
         "features": [
-          "Ajout de fonctionnalités fullstack de la conception de l'architecture jusqu'à l'implémentation du design",
-          "Ajout de fonctionnalités back-end, admin",
-          "Maintenance applicative et montée en version : Rails 5, 6, 7, Ruby 3, Sidekiq 7 ...",
-          "Migrations de données avec de forts impacts business (centaine de milliers d'entrée)"
+          "Optimisation des requêtes SQL sur PostgreSQL et MySQL (géolocalisation/matching, exports de données)",
+          "Refonte des logs serveurs et documentation API pour les équipes tech",
+          "Migrations de données avec de forts impacts business (centaine de milliers d'entrée)",
+          "Ajout de fonctionnalités fullstack"
         ],
-        "technologies": "Ruby On rails"
+        "technologies": "Ruby On rails, JS"
       },
       "annuaire": {
-        "title": "annuaire",
+        "title": "Annuaire",
         "description": "Application RoR de MAJ quotidienne de l'ensemble des 300k+ artisans de France, leurs sociétés, certifications (https://artisans.quelleenergie.fr/)",
         "features": [
-          "Ajout de fonctionnalités fullstack de la conception de l'architecture jusqu'à l'implémentation du design",
+          "Réduction de la dette technique (Réduction taille des tables, refonte doc API ..)",
+          "Suivi proactif des bugs (Datadog, GCP) et correction de bugs complexes (APIs, synchro outils, CRON & Jobs)",
           "Ajout de fonctionnalités back-end, admin",
-          "Maintenance applicative et montée en version : Rails 5, 6, 7, Ruby 3, Sidekiq 7 ...",
-          "Migrations de données avec de forts impacts business (centaine de milliers d'entrée)",
-          "Optimisation des requêtes SQL sur PostgreSQL et MySQL (géolocalisation/matching, exports de données)",
-          "Suivi proactif des bugs (Datadog, GCP) et correction de bugs complexes (APIs, synchro outils, CRON & Jobs) avec les équipes internes",
-          "Participation à la réduction de la dette technique : refonte des logs, et amélioration des specs API pour rendre les équipes plus autonomes."
+          "Maintenance applicative et montée en version : Rails 5.2 vers 7, Ruby 3",
+          "Migrations de données avec de forts impacts business (centaine de milliers d'entrée)"
         ],
-        "technologies": "Ruby On rails"
-      }
-    },
-    "personal_projects": {
-      "headline": "Mes missions freelance & perso",
-      "portfolio": {
-        "title": "Portfolio",
-        "description": "Portfolio simple qui retrace mon parcours, mes projets",
-        "features": [
-          "Traduction avec vue-i18n qui vient définir tout le contenu du site, bouton de traduction auto",
-          "Mise en place de responsive pour mobile"
-        ],
-        "technologies": "Vue.js, Typescript"
+        "technologies": "Ruby On rails, ActiveAdmin"
       },
       "misterauto": {
         "title": "Mister Auto",
@@ -138,13 +124,25 @@
       },
       "goodwill": {
         "title": "Goodwill",
-        "description": "Quelleenergie est une plateforme Back-office/ERP de géolocalisation, mise en relation, facturation etc.. pour les artisans francais",
+        "description": "Goodwill est une entreprise de services digitaux pour les experts comptables",
         "features": [
           "Conception d'un moteur d’enrichissement API (Via 4 points API) pour enrichir 13k sociétés d'experts comptables afin d'obtenir les coordonnées des dirigeants de ces entreprises.",
           "Nettoyage et segmentation des contacts",
           "Création d'une automatisation pour prospection Linkedin, relance mail (Ruby On Rails, API Rest, script, Google Sheets)"
         ],
         "technologies": "Ruby On rails, Sidekiq, API tierces"
+      }
+    },
+    "personal_projects": {
+      "headline": "Mes projets",
+      "portfolio": {
+        "title": "Portfolio",
+        "description": "Portfolio simple qui retrace mon parcours, mes projets",
+        "features": [
+          "Traduction avec vue-i18n qui vient définir tout le contenu du site, bouton de traduction auto",
+          "Mise en place de responsive pour mobile"
+        ],
+        "technologies": "Vue.js, Typescript"
       }
     }
   },

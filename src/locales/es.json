@@ -1,0 +1,153 @@
+{
+  "banner": {
+    "presentation": "Hola, soy",
+    "headline": "Desarrollo aplicaciones web y móviles.",
+    "description": "Soy un desarrollador de software que ha trabajado con clientes que van desde startups hasta pymes, en aplicaciones que abarcan desde la renovación energética hasta plataformas de armario virtual."
+  },
+  "aboutme": {
+    "headline": "Sobre mí",
+    "first_paragraph": "Después de explorar el campo digital, growth y automatización durante 3 años apoyando a startups, decidí sumergirme en el desarrollo web al unirme a Le Wagon en el verano de 2021.",
+    "second_paragraph": "Me uní a una agencia de desarrollo web y móvil donde trabajo en varios proyectos con Ruby On Rails y Vue.js/Ionic.",
+    "third_paragraph": "Aquí están las tecnologías con las que he trabajado recientemente",
+    "technologies": ["Ruby on Rails", "Typescript", "Vue.js", "React Native"]
+  },
+  "formations": {
+    "headline": "Estudios y formaciones",
+    "lewagon": {
+      "image": "lewagon",
+      "date": "2021",
+      "title": "Bootcamp de Desarrollo Web",
+      "details": "Formación intensiva en Ruby on Rails, SQL, JS y creación de un proyecto web"
+    },
+    "second_ebi": {
+      "image": "ebi",
+      "date": "2018 - 2020",
+      "title": "Ingeniería en Biotecnología y Emprendimiento",
+      "details": "Lanzamiento de proyectos y concursos, Innovación, Marketing (Digital, B2B)"
+    },
+    "first_ebi": {
+      "image": "ebi",
+      "date": "2015 - 2018",
+      "title": "Preparación para Ingeniería en Biotecnología",
+      "details": "Ciencias biológicas, Matemáticas, Física, Estadística (R), Programación (C++)"
+    }
+  },
+  "experiences": {
+    "headline": "Mis experiencias",
+    "captive": {
+      "name": "Captive",
+      "date_interval": "Octubre 2022 -> Julio 2024",
+      "titre_poste": "Desarrollador back-end & fullstack",
+      "missions": [
+        "Para Effy (2 aplicaciones web de renovación energética), participación en la reducción de la deuda técnica y resolución de bugs complejos: mantenimiento de la aplicación y actualización de versiones: Rails 5, 6, 7, Ruby 3, Sidekiq 7.",
+        "Para Vera (aplicación móvil de armario virtual), mejora del SSO multiplataforma (separación de cuenta/usuario), creación del algoritmo de recomendación de atuendos y optimización de SQL. Integración de funcionalidades fullstack: API Rest, integración con Vue.js/Ionic (Likes de atuendos, seguidores). Creación de pruebas (Rspec, Cypress, Jest).",
+        "Otros proyectos: funcionalidades backend en TDD (pruebas unitarias, integración), optimización del rendimiento de SQL y API, gestión de permisos y funcionalidades de administración, adición de soft-delete en algunos modelos clave, actualización y mantenimiento de la documentación técnica."
+      ]
+    },
+    "freelance": {
+      "name": "Freelance",
+      "date_interval": "Octubre 2020 -> Octubre 2022",
+      "titre_poste": "Desarrollador & growth",
+      "missions": [
+        "Para Mister Auto: líder entre la DSI y los equipos de negocio para la implementación del sistema transaccional existente hacia Emarsys (SAP). Definición e implementación del sistema de diseño, creación de más de 100 componentes HTML/CSS con lógica empresarial.",
+        "Para Goodwill: diseño de un motor de enriquecimiento API (mediante 4 puntos API) para enriquecer 13k empresas de contadores y obtener los datos de contacto de los directores. Limpieza y segmentación de contactos, creación de una automatización para prospección en LinkedIn y seguimiento de correos (Ruby On Rails, API Rest, script, Google Sheets).",
+        "Diversas misiones de growth: implementación de sistemas de prospección outbound, estrategia SEO, auditoría SEO, formación en prospección, implementación de sitios web, etc."
+      ]
+    },
+    "lewagon": {
+      "name": "Le Wagon",
+      "date_interval": "Julio 2021 -> Agosto 2024",
+      "titre_poste": "Asistente de Profesor",
+      "missions": [
+        "+50 días de acompañamiento a los estudiantes de Le Wagon y talleres (X-HEC).",
+        "Resolución de tickets, explicación de conceptos sobre los siguientes temas: algoritmos en Ruby, OOP, SQL, front-end (HTML/CSS/JS), Ruby On Rails, Heroku, Git, Github."
+      ]
+    },
+    "cartelis": {
+      "name": "Cartelis",
+      "date_interval": "Enero 2020 -> Septiembre 2020",
+      "titre_poste": "Consultor digital en prácticas",
+      "missions": [
+        "Misión de consultoría: líder operativo en la implementación de un sistema de prospección B2B: segmentación de clientes, construcción de una base de datos de prospectos, contacto automatizado multicanal (email, LinkedIn) y seguimiento de rendimiento: CPL: 15.",
+        "Elaboración de recursos en Google Sheets: plan de etiquetado automatizado en Firebase, planificación de proyectos digitales, plan de acción de marketing.",
+        "Redacción de artículos sobre temas digitales y de datos (comparación de herramientas, lead scoring, prospección, etc.)."
+      ]
+    }
+  },
+  "projects": {
+    "calltoaction": "Ver más",
+    "featured_projects": {
+      "headline": "Mis proyectos profesionales",
+      "vera": {
+        "title": "Vera",
+        "description": "Aplicación móvil para iOS y Android: Armario virtual con una dimensión social similar a Instagram (Cuenta, Me gusta, Seguir, Compartir, Perfil)",
+        "features": [
+          "Mejora del SSO multiplataforma (Separación de cuenta/usuario)",
+          "Creación del algoritmo de recomendación de atuendos (Optimización de rendimiento SQL)",
+          "Integración de funcionalidades fullstack: API Rest, integración con Vue.js/Ionic (Likes de atuendos, seguir, atuendos)",
+          "Creación de pruebas (Rspec, Cypress, Jest)"
+        ],
+        "technologies": "Ruby on Rails, Vue.js, Ionic, GCP"
+      },
+      "quelleenergie": {
+        "title": "Quelleenergie",
+        "description": "Quelleenergie es una plataforma de Back-office/ERP para geolocalización, conexión, facturación, etc., para artesanos en Francia",
+        "features": [
+          "Optimización de consultas SQL en PostgreSQL y MySQL (geolocalización/matching, exportación de datos)",
+          "Revisión de los registros del servidor y documentación de API para los equipos técnicos",
+          "Migraciones de datos con grandes impactos comerciales (cientos de miles de entradas)",
+          "Adición de funcionalidades fullstack"
+        ],
+        "technologies": "Ruby on Rails, JS"
+      },
+      "annuaire": {
+        "title": "Annuaire",
+        "description": "Aplicación RoR con actualizaciones diarias de los más de 300k+ artesanos de Francia, sus empresas, certificaciones (https://artisans.quelleenergie.fr/)",
+        "features": [
+          "Reducción de la deuda técnica (Reducción del tamaño de las tablas, revisión de la documentación de API, etc.)",
+          "Seguimiento proactivo de errores (Datadog, GCP) y corrección de errores complejos (APIs, sincronización de herramientas, CRON y trabajos)",
+          "Adición de funcionalidades backend, administración",
+          "Mantenimiento de la aplicación y actualización de versiones: Rails 5.2 a 7, Ruby 3",
+          "Migraciones de datos con grandes impactos comerciales (cientos de miles de entradas)"
+        ],
+        "technologies": "Ruby on Rails, ActiveAdmin"
+      },
+      "misterauto": {
+        "title": "Mister Auto",
+        "description": "Consultor para la migración del sistema transaccional existente hacia Emarsys (SAP)",
+        "features": [
+          "Coordinación de las reglas de negocio entre el DSI y el equipo de negocio para gestionar las especificidades por país/producto, etc.",
+          "Redacción de la documentación técnica y formación para 15 personas para hacer que los equipos sean autónomos",
+          "Resultado: 99,7% de entregabilidad para más de 150k correos electrónicos/mes. (Integración de 45 correos en 19 idiomas)"
+        ],
+        "technologies": "HTML, CSS, ESL, Design system"
+      },
+      "goodwill": {
+        "title": "Goodwill",
+        "description": "Goodwill es una empresa de servicios digitales para contadores públicos",
+        "features": [
+          "Diseño de un motor de enriquecimiento de API (a través de 4 puntos API) para enriquecer 13k empresas de contadores públicos y obtener los datos de contacto de los directores.",
+          "Limpieza y segmentación de contactos",
+          "Creación de una automatización para la prospección en LinkedIn y seguimiento de correos (Ruby On Rails, API Rest, script, Google Sheets)"
+        ],
+        "technologies": "Ruby on Rails, Sidekiq, API de terceros"
+      }
+    },
+    "personal_projects": {
+      "headline": "Mis proyectos",
+      "portfolio": {
+        "title": "Portfolio",
+        "description": "Portfolio simple que repasa mi trayectoria y mis proyectos",
+        "features": [
+          "Traducción con vue-i18n que define todo el contenido del sitio, botón de traducción automática",
+          "Implementación de diseño responsive para dispositivos móviles"
+        ],
+        "technologies": "Vue.js, Typescript"
+      }
+    }
+  },
+  "footer": {
+    "first_text": "Hecho en París en 2024 por Tristan Monteiro",
+    "second_text": "Imágenes generadas con Bing IA"
+  }
+}

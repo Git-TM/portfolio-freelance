@@ -16,7 +16,7 @@ const selectedExperienceKey = computed(() => selectedExperience.value)
 
 <template>
   <div class="experiences-container">
-    <h2><span class="numbered-title">03. </span>Où j'ai travaillé</h2>
+    <h2><span class="numbered-title">03. </span>{{ t('experiences.headline') }}</h2>
     <div class="experiences-content">
       <div class="experiences-menu">
         <ul>

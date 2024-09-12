@@ -21,7 +21,7 @@ const getRightImages = (formation: string): string => {
 
 <template>
   <div class="timeline-container">
-    <h2><span class="numbered-title">01. </span>Mes formations</h2>
+    <h2><span class="numbered-title">01. </span>{{ t(`formations.headline`) }}</h2>
     <div class="timeline-details">
       <ul>
         <li v-for="(formation, index) in props.formations" :key="index">

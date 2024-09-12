@@ -45,7 +45,11 @@ const number_title = props.projectType === 'featured_projects' ? '04. ' : '05. '
         </p>
         <p>{{ t(`projects.${projectType}.${project}.description`) }}</p>
         <div class="project-card-link">
-          <PrimaryButton content="Voir plus" class="project-button" @click="openModal(project)" />
+          <PrimaryButton
+            :content="$t(`projects.calltoaction`)"
+            class="project-button"
+            @click="openModal(project)"
+          />
         </div>
       </div>
     </div>
