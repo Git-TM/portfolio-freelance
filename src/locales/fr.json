@@ -134,7 +134,7 @@
       }
     },
     "personal_projects": {
-      "headline": "Mes projets",
+      "headline": "Mes projets persos",
       "portfolio": {
         "title": "Portfolio",
         "description": "Portfolio simple qui retrace mon parcours, mes projets",
@@ -143,6 +143,15 @@
           "Mise en place de responsive pour mobile"
         ],
         "technologies": "Vue.js, Typescript"
+      },
+      "script": {
+        "title": "Script Scraping",
+        "description": "Script divers de scraping",
+        "features": [
+          "Script de récupération ETF Boursorama et enrichissement",
+          "Script de récupération de données cryptos"
+        ],
+        "technologies": "Ruby"
       }
     }
   },

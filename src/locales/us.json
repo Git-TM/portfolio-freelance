@@ -143,6 +143,15 @@
           "Implemented responsive design for mobile"
         ],
         "technologies": "Vue.js, Typescript"
+      },
+      "script": {
+        "title": "Scraping Script",
+        "description": "Various scraping scripts",
+        "features": [
+          "Script for retrieving and enriching ETF data from Boursorama",
+          "Script for retrieving cryptocurrency data"
+        ],
+        "technologies": "Ruby"
       }
     }
   },
