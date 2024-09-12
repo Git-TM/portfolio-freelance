@@ -17,6 +17,7 @@
 
       & li::before {
         content: '';
+        padding-right: 0rem;
       }
 
       & .menu-selected-value {

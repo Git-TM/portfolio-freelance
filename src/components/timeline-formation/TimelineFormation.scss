@@ -39,6 +39,7 @@
         border: 2px solid white;
         top: 50%;
         z-index: 1;
+        padding-right: 0rem;
       }
 
       &:nth-child(odd) {
@@ -54,7 +55,7 @@
         background: white;
         border: 1px solid var(--primary-color);
         border-radius: 20px;
-        box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+        box-shadow: var(--box-shadow-color);
 
         img {
           width: 4rem;

@@ -8,9 +8,7 @@
 }
 
 .project-card {
-  box-shadow:
-    0 4px 6px rgba(136, 146, 176, 0.2),
-    0 1px 3px rgba(136, 146, 176, 0.15);
+  box-shadow: var(--box-shadow-color);
   border-radius: 1rem;
   padding: 1rem;
   display: flex;
