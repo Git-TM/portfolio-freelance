@@ -1,7 +1,5 @@
 {
   "toggleTheme": "Changer de theme",
-  "changerLangue": "English 🇬🇧",
-  "changerTheme": "Changer Theme",
   "banner": {
     "headline": "Je développe des applications web et mobiles.",
     "description": "Je suis un développeur fullstack, codant principalement sur Ruby On rails en backend et Vue.js / Ionic pour le front web et mobile."
