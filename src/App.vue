@@ -30,12 +30,22 @@ const preloadImages = () => {
   })
 }
 
+const needLoadingAnimation = () => {
+  const hasLoadedBefore = localStorage.getItem('hasLoadedBefore')
+  if (!hasLoadedBefore) {
+    localStorage.setItem('hasLoadedBefore', 'true')
+    setTimeout(() => {
+      currentlyLoading.value = false
+    }, 2000)
+  } else {
+    currentlyLoading.value = false
+  }
+}
+
 onMounted(() => {
   setInitialConfig()
   preloadImages()
-  setTimeout(() => {
-    currentlyLoading.value = false
-  }, 2000)
+  needLoadingAnimation()
 })
 </script>
 
