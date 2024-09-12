@@ -1,5 +1,4 @@
 {
-  "toggleTheme": "Changer de theme",
   "banner": {
     "headline": "Je développe des applications web et mobiles.",
     "description": "Je suis un développeur fullstack, codant principalement sur Ruby On rails en backend et Vue.js / Ionic pour le front web et mobile."
@@ -148,5 +147,9 @@
         "technologies": "Ruby On rails, Sidekiq, API tierces"
       }
     }
+  },
+  "footer": {
+    "first_text": "Fait a Paris en 2024 par Tristan Monteiro",
+    "second_text": "Images générées avec Bing IA"
   }
 }
