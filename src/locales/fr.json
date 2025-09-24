@@ -34,6 +34,16 @@
   },
   "experiences": {
     "headline": "Mes expériences",
+    "logicaps": {
+      "name": "Logicaps",
+      "date_interval": "Janvier 2025 -> Septembre 2025",
+      "titre_poste": "Développeur fullstack",
+      "missions": [
+        "Création d’une dizaine de fonctionnalités clés (chatrooms WebSocket, dashboard suivi budget, catégorisation de document, gestion copros etc..)",
+        "Intégration complète de Stripe (plans & abonnements) et d’un OCR pour extractions documentaires",
+        "Gestion diverses : Docker, Sidekiq, Redis, analytics anonymisées, Sentry, traductions etc.."
+      ]
+    },
     "captive": {
       "name": "Captive",
       "date_interval": "Octobre 2022 -> Juillet 2024",
@@ -78,6 +88,17 @@
     "calltoaction": "Voir plus",
     "featured_projects": {
       "headline": "Mes projets professionels",
+      "logicaps": {
+        "title": "Logicaps",
+        "description": "MVP de Logicaps, gestion des indivisions immobilières à travers le document",
+        "features": [
+          "Création d'une dizaine de fonctionnalités clés (chatrooms WebSocket, dashboard suivi budget, catégorisation de document, gestion copros etc..)",
+          "Intégration complète de Stripe (plans & abonnements) et d’un OCR pour extractions documentaires",
+          "Gestion diverses : Docker, Sidekiq, Redis, analytics anonymisées, Sentry, traductions etc.."
+        ],
+        "technologies": "Ruby On rails, React.js, Inertia.js",
+        "status": "completed"
+      },
       "vera": {
         "title": "Vera",
         "description": "Application mobile iOs et Android : Vide dressing virtuel et dimension sociale comme Instagram (Compte, Like, Follow, Partage, Profil)",
@@ -87,7 +108,8 @@
           "Intégrations de fonctionnalités fullstack : API Rest, intégration en Vue.js/Ionic. (Like des tenues, follow, tenues)",
           "Création de tests (Rspec, Cypress, Jest)"
         ],
-        "technologies": "Ruby On rails, Vue.js, Ionic, GCP"
+        "technologies": "Ruby On rails, Vue.js, Ionic, GCP",
+        "status": "completed"
       },
       "quelleenergie": {
         "title": "Quelleenergie",
@@ -98,11 +120,12 @@
           "Migrations de données avec de forts impacts business (centaine de milliers d'entrée)",
           "Ajout de fonctionnalités fullstack"
         ],
-        "technologies": "Ruby On rails, JS"
+        "technologies": "Ruby On rails, JS",
+        "status": "completed"
       },
       "annuaire": {
         "title": "Annuaire",
-        "description": "Application RoR de MAJ quotidienne de l'ensemble des 300k+ artisans de France, leurs sociétés, certifications (https://artisans.quelleenergie.fr/)",
+        "description": "Application RoR de MAJ quotidienne de l'ensemble des 300k+ artisans de France, leurs sociétés, certifications",
         "features": [
           "Réduction de la dette technique (Réduction taille des tables, refonte doc API ..)",
           "Suivi proactif des bugs (Datadog, GCP) et correction de bugs complexes (APIs, synchro outils, CRON & Jobs)",
@@ -110,7 +133,8 @@
           "Maintenance applicative et montée en version : Rails 5.2 vers 7, Ruby 3",
           "Migrations de données avec de forts impacts business (centaine de milliers d'entrée)"
         ],
-        "technologies": "Ruby On rails, ActiveAdmin"
+        "technologies": "Ruby On rails, ActiveAdmin",
+        "status": "completed"
       },
       "misterauto": {
         "title": "Mister Auto",
@@ -120,7 +144,8 @@
           "Rédaction de la documentation technique et formation pour 15 personnes, afin de rendre les équipes autonomes",
           "Résultat : 99,7% de délivrabilité pour +150k emails/mois. (Intégration de 45 mails en 19 langues)"
         ],
-        "technologies": "HTML, CSS, ESL, Design system"
+        "technologies": "HTML, CSS, ESL, Design system",
+        "status": "completed"
       },
       "goodwill": {
         "title": "Goodwill",
@@ -130,11 +155,22 @@
           "Nettoyage et segmentation des contacts",
           "Création d'une automatisation pour prospection Linkedin, relance mail (Ruby On Rails, API Rest, script, Google Sheets)"
         ],
-        "technologies": "Ruby On rails, Sidekiq, API tierces"
+        "technologies": "Ruby On rails, Sidekiq, API tierces",
+        "status": "completed"
       }
     },
     "personal_projects": {
       "headline": "Mes projets persos",
+      "stock-alert": {
+        "title": "Action Alert",
+        "description": "Application mobile iOS et Android : Alertes de prix des actions en bourse",
+        "features": [
+          "Création d'un serveur Ruby on Rails avec authentification JWT et API Rest",
+          "Création d'une application mobile iOS et Android avec React Native et Expo"
+        ],
+        "status": "in-progress",
+        "technologies": "Ruby on Rails, React Native, Expo"
+      },
       "portfolio": {
         "title": "Portfolio",
         "description": "Portfolio simple qui retrace mon parcours, mes projets",
@@ -142,7 +178,18 @@
           "Traduction avec vue-i18n qui vient définir tout le contenu du site, bouton de traduction auto",
           "Mise en place de responsive pour mobile"
         ],
+        "status": "completed",
         "technologies": "Vue.js, Typescript"
+      },
+      "spotify-save": {
+        "title": "Spotify Save",
+        "description": "Outil Javascript pour sauvegarder l'ensemble des musiques de votre playlist Spotify",
+        "features": [
+          "Création d'un serveur Node.js avec authentification Spotify",
+          "Marquage des playlists à sauvegarder"
+        ],
+        "status": "completed",
+        "technologies": "Vanilla JS"
       },
       "script": {
         "title": "Script Scraping",
@@ -151,6 +198,7 @@
           "Script de récupération ETF Boursorama et enrichissement",
           "Script de récupération de données cryptos"
         ],
+        "status": "completed",
         "technologies": "Ruby"
       }
     }
@@ -158,5 +206,9 @@
   "footer": {
     "first_text": "Fait a Paris en 2024 par Tristan Monteiro",
     "second_text": "Images générées avec Bing IA"
+  },
+  "status": {
+    "completed": "Finalisé",
+    "in-progress": "En cours"
   }
 }

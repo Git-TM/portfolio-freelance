@@ -4,7 +4,7 @@ import NavbarMain from '@/components/navbar-main/NavbarMain'
 import BannerAccueil from '@/components/banner-accueil/BannerAccueil'
 import AboutMe from '@/components/about-me/AboutMe'
 import ExperienceDetails from '@/components/experience-details/ExperienceDetails'
-import DetailProjets from '@/components/detail-projets/DetailProjets'
+import DetailProjets from '@/components/projects/detail-projets/DetailProjets'
 import InitialLoader from '@/components/initial-loader/InitialLoader'
 import TimelineFormation from '@/components/timeline-formation/TimelineFormation'
 import MainFooter from '@/components/main-footer/MainFooter'
@@ -16,8 +16,15 @@ const configStore = useConfigStore()
 
 const currentlyLoading = ref(true)
 const formations = ['first_ebi', 'second_ebi', 'lewagon']
-const featured_projects = ['vera', 'quelleenergie', 'annuaire', 'misterauto', 'goodwill']
-const personal_projects = ['portfolio', 'script']
+const featured_projects = [
+  'logicaps',
+  'vera',
+  'quelleenergie',
+  'annuaire',
+  'misterauto',
+  'goodwill'
+]
+const personal_projects = ['stock-alert', 'portfolio', 'spotify-save', 'script']
 
 const setInitialConfig = () => {
   configStore.setInitialConfig()

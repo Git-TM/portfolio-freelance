@@ -1,0 +1,21 @@
+@import '@/assets/stylesheets/variables.scss';
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  &.completed {
+    background-color: $status-badge-green;
+  }
+
+  &.in-progress {
+    background-color: $status-badge-red;
+  }
+}

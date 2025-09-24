@@ -5,13 +5,17 @@ import { computed, ref } from 'vue'
 const { t, tm } = useI18n()
 const selectedExperience = ref<string>('captive')
 
-const experiences = ['captive', 'lewagon', 'freelance', 'cartelis']
+const experiences = ['logicaps', 'captive', 'lewagon', 'freelance', 'cartelis']
 
 const selectExperience = (experienceKey: string) => {
   selectedExperience.value = experienceKey
 }
 
 const selectedExperienceKey = computed(() => selectedExperience.value)
+
+const selectedMissions = computed(
+  () => tm(`experiences.${selectedExperienceKey.value}.missions`) as string[]
+)
 </script>
 
 <template>
@@ -44,10 +48,7 @@ const selectedExperienceKey = computed(() => selectedExperience.value)
         </div>
         <div class="experiences-details-missions">
           <ul>
-            <li
-              v-for="(mission, index) in tm(`experiences.${selectedExperienceKey}.missions`)"
-              :key="index"
-            >
+            <li v-for="(mission, index) in selectedMissions" :key="index">
               {{ mission }}
             </li>
           </ul>

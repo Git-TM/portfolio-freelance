@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
-import ThemeButton from '../buttons/theme-button/ThemeButton'
+import ThemeButton from '../unitary/buttons/theme-button/ThemeButton'
 import { useConfigStore } from '@/stores/config'
 
 const configStore = useConfigStore()

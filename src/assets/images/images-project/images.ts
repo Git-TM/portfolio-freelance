@@ -5,6 +5,7 @@ import misterauto from './project-misterauto.png'
 import goodwill from './project-goodwill.png'
 import portfolio from './project-portfolio.png'
 import script from './project-script.png'
+import logicaps from './project-logicaps.png'
 
 const images: Record<string, string> = {
   vera,
@@ -13,7 +14,8 @@ const images: Record<string, string> = {
   misterauto,
   goodwill,
   portfolio,
-  script
+  script,
+  logicaps
 }
 
 export default images

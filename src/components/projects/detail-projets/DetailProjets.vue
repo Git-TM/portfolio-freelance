@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 import IconCoding from '@/assets/images/icons/icon-coding.svg'
-import PrimaryButton from '../buttons/primary-button/PrimaryButton'
-import ModalProject from '../modal-project/ModalProject'
+import PrimaryButton from '@/components/unitary/buttons/primary-button/PrimaryButton'
+import ModalProject from '@/components/projects/modal-project/ModalProject'
 import { ref } from 'vue'
+import StatusBadge from '@/components/unitary/status-badge/StatusBadge'
 
 const { t } = useI18n()
 
@@ -37,8 +38,12 @@ const number_title = props.projectType === 'featured_projects' ? '04. ' : '05. '
     <div class="projects-card">
       <div class="project-card" v-for="(project, index) in props.projects" :key="index">
         <div class="project-card-title">
-          <IconCoding class="project-icon-coding" />
           <h3>{{ t(`projects.${projectType}.${project}.title`) }}</h3>
+          <StatusBadge
+            :status="t(`projects.${projectType}.${project}.status`)"
+            :project_type="projectType"
+            :project_name="project"
+          />
         </div>
         <p class="project-card-technologies">
           {{ t(`projects.${projectType}.${project}.technologies`) }}
