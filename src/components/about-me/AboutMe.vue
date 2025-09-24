@@ -16,6 +16,7 @@ const technologies = computed(() => tm('aboutme.technologies') as string[])
         <p>{{ t('aboutme.first_paragraph') }}</p>
         <p>{{ t('aboutme.second_paragraph') }}</p>
         <p>{{ t('aboutme.third_paragraph') }}</p>
+        <p>{{ t('aboutme.fourth_paragraph') }}</p>
         <ul>
           <li v-for="(mission, index) in technologies" :key="index">
             {{ mission }}

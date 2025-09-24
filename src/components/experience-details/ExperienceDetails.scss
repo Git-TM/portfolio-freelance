@@ -1,8 +1,17 @@
+// Interface mobile cachée par défaut
+.mobile-experience-interface {
+  display: none;
+}
+
+.mobile-only {
+  display: none;
+}
+
 .experiences-content {
   display: flex;
   justify-content: space-evenly;
 
-  & .experiences-menu {
+  & .desktop-menu {
     padding-right: 2rem;
 
     & ul {
@@ -13,6 +22,8 @@
         padding: 1rem 2rem;
         color: var(--primary-color);
         border-left: 0.5px solid grey;
+        cursor: pointer;
+        transition: all 0.3s ease;
       }
 
       & li::before {
@@ -29,6 +40,8 @@
   }
 
   & .experiences-details {
+    flex: 1;
+
     & .experiences-details-title h3 {
       margin-bottom: 0;
     }
@@ -52,25 +65,126 @@
   }
 }
 
+// Styles mobile modernes
 @media (max-width: 768px) {
+  .desktop-menu {
+    display: none !important;
+  }
+
+  .mobile-experience-interface {
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
   .experiences-content {
     display: block;
+  }
 
-    & .experiences-menu {
-      & ul {
-        display: flex;
-        overflow-y: auto;
+  // Header de navigation mobile
+  .mobile-nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background: rgba(var(--primary-color-rgb), 0.05);
+    border-radius: 12px;
+    margin-bottom: 1rem;
 
-        & li {
-          border-left: none;
-          border-bottom: 0.5px solid grey;
-        }
+    .nav-btn {
+      background: var(--primary-color);
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s ease;
 
-        & .menu-selected-value {
-          border-bottom: solid 2px var(--primary-color);
-          border-left: none;
-        }
+      &:hover:not(:disabled) {
+        transform: scale(1.1);
+        box-shadow: 0 4px 12px rgba(var(--primary-color-rgb), 0.3);
       }
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+    }
+
+    .current-experience {
+      text-align: center;
+      flex: 1;
+
+      .experience-counter {
+        font-size: 0.8rem;
+        color: var(--primary-color);
+        opacity: 0.7;
+        display: block;
+      }
+
+      h4 {
+        margin: 0.2rem 0 0 0;
+        font-size: 1.1rem;
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  // Indicateurs de progression
+  .progress-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 1rem;
+
+    .indicator {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(var(--primary-color-rgb), 0.3);
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &.active {
+        background: var(--primary-color);
+        transform: scale(1.3);
+      }
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  // Hint tactile
+  .swipe-hint {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: rgba(var(--primary-color-rgb), 0.05);
+    border-radius: 8px;
+
+    span {
+      font-size: 0.85rem;
+      color: var(--primary-color);
+      opacity: 0.7;
+      font-style: italic;
+    }
+  }
+
+  // Animation du contenu
+  .experiences-details {
+    transition: transform 0.3s ease;
+
+    &:active {
+      transform: scale(0.98);
     }
   }
 }

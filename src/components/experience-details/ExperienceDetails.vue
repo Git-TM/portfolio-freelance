@@ -16,13 +16,51 @@ const selectedExperienceKey = computed(() => selectedExperience.value)
 const selectedMissions = computed(
   () => tm(`experiences.${selectedExperienceKey.value}.missions`) as string[]
 )
+
+const currentIndex = computed(() => experiences.indexOf(selectedExperience.value))
+
+const goToNext = () => {
+  const nextIndex = (currentIndex.value + 1) % experiences.length
+  selectedExperience.value = experiences[nextIndex]
+}
+
+const goToPrev = () => {
+  const prevIndex = currentIndex.value === 0 ? experiences.length - 1 : currentIndex.value - 1
+  selectedExperience.value = experiences[prevIndex]
+}
+
+const touchStartX = ref(0)
+const touchEndX = ref(0)
+
+const handleTouchStart = (e: TouchEvent) => {
+  touchStartX.value = e.changedTouches[0].screenX
+}
+
+const handleTouchEnd = (e: TouchEvent) => {
+  touchEndX.value = e.changedTouches[0].screenX
+  handleSwipe()
+}
+
+const handleSwipe = () => {
+  const swipeThreshold = 50
+  const swipeDistance = touchStartX.value - touchEndX.value
+
+  if (Math.abs(swipeDistance) > swipeThreshold) {
+    if (swipeDistance > 0) {
+      goToNext()
+    } else {
+      goToPrev()
+    }
+  }
+}
 </script>
 
 <template>
   <div class="experiences-container">
     <h2><span class="numbered-title">03. </span>{{ t('experiences.headline') }}</h2>
+
     <div class="experiences-content">
-      <div class="experiences-menu">
+      <div class="experiences-menu desktop-menu">
         <ul>
           <li
             v-for="experienceKey in experiences"
@@ -36,7 +74,50 @@ const selectedMissions = computed(
           </li>
         </ul>
       </div>
-      <div class="experiences-details">
+
+      <div class="mobile-experience-interface">
+        <div class="mobile-nav-header">
+          <button @click="goToPrev" class="nav-btn prev-btn" :disabled="experiences.length <= 1">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M15 18L9 12L15 6"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+
+          <div class="current-experience">
+            <span class="experience-counter">{{ currentIndex + 1 }}/{{ experiences.length }}</span>
+            <h4>{{ t(`experiences.${selectedExperienceKey}.name`) }}</h4>
+          </div>
+
+          <button @click="goToNext" class="nav-btn next-btn" :disabled="experiences.length <= 1">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M9 18L15 12L9 6"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="progress-indicators">
+          <div
+            v-for="(exp, index) in experiences"
+            :key="exp"
+            :class="['indicator', { active: index === currentIndex }]"
+            @click="selectExperience(exp)"
+          ></div>
+        </div>
+      </div>
+
+      <div class="experiences-details" @touchstart="handleTouchStart" @touchend="handleTouchEnd">
         <div class="experiences-details-title">
           <h3>
             {{ t(`experiences.${selectedExperienceKey}.titre_poste`) }}
@@ -52,6 +133,10 @@ const selectedMissions = computed(
               {{ mission }}
             </li>
           </ul>
+        </div>
+
+        <div class="swipe-hint mobile-only">
+          <span>← Glisser pour naviguer →</span>
         </div>
       </div>
     </div>

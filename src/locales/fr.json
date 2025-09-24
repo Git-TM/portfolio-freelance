@@ -6,10 +6,11 @@
   },
   "aboutme": {
     "headline": "A propos",
-    "first_paragraph": "Après avoir exploré le domaine du digital, growth & automatisation pendant 3 ans au travers en accompagnant des start-ups, je décide de me plonger dans le développement web en intégrant Le Wagon l'été 2021.",
-    "second_paragraph": "Je rejoins une agence de développement web & mobile ou je pratique sur différents projets avec Ruby On Rails et Vue.js/Ionic ",
-    "third_paragraph": "Voila les technologies sur lesquels j'ai travaillé récemment",
-    "technologies": ["Ruby on Rails", "Typescript", "Vue.js", "React Native"]
+    "first_paragraph": "Après avoir exploré le domaine du digital, growth & automatisation pendant 2 ans en accompagnant des start-ups, je décide de me plonger dans le développement web en intégrant Le Wagon l'été 2021.",
+    "second_paragraph": "Je rejoins une agence de développement web & mobile ou je pratique sur différents projets avec Ruby On Rails et Vue.js/Ionic pour Effy (PME) et Vera (Start-up mobile)",
+    "third_paragraph": "Je continue en freelance en passant professeur au Wagon et développe un MVP pour Logicaps (Start-up immobilière)",
+    "fourth_paragraph": "Voila les technologies sur lesquels j'ai travaillé récemment",
+    "technologies": ["Ruby on Rails", "Typescript", "React.js", "React Native"]
   },
   "formations": {
     "headline": "Etudes et formations",
@@ -37,7 +38,7 @@
     "logicaps": {
       "name": "Logicaps",
       "date_interval": "Janvier 2025 -> Septembre 2025",
-      "titre_poste": "Développeur fullstack",
+      "titre_poste": "Principal développeur fullstack",
       "missions": [
         "Création d’une dizaine de fonctionnalités clés (chatrooms WebSocket, dashboard suivi budget, catégorisation de document, gestion copros etc..)",
         "Intégration complète de Stripe (plans & abonnements) et d’un OCR pour extractions documentaires",
@@ -67,10 +68,11 @@
     "lewagon": {
       "name": "Le Wagon",
       "date_interval": "Juillet 2021 -> Aout 2024",
-      "titre_poste": "Professeur Assistant",
+      "titre_poste": "Professeur et référent projet",
       "missions": [
-        "+50 jours d'accompagnement pour les élèves du Wagon et workshops (X-HEC)",
-        "Résolution de tickets, explication de concepts sur les sujets suivants : Algorithme Ruby, OOP, SQL, Front-end (HTML/CSS/JS), Ruby On Rails, Heroku, Git, Github"
+        "+15 jours en tant que professeur et référent de projet",
+        "+50 jours en tant qu'assistant pour les élèves du Wagon",
+        "Résolution de tickets, explication de concepts : Algorithme Ruby, OOP, SQL, Front-end (HTML/CSS/JS), Ruby On Rails, Heroku, Git, Github, etc..."
       ]
     },
     "cartelis": {
@@ -166,7 +168,8 @@
         "description": "Application mobile iOS et Android : Alertes de prix des actions en bourse",
         "features": [
           "Création d'un serveur Ruby on Rails avec authentification JWT et API Rest",
-          "Création d'une application mobile iOS et Android avec React Native et Expo"
+          "Création d'une application mobile iOS et Android avec React Native et Expo",
+          "A venir : Pouvoir définir une alerte de prix sur une action en cours. Polling de 10 secondes pour récupérer les données."
         ],
         "status": "in-progress",
         "technologies": "Ruby on Rails, React Native, Expo"
@@ -196,7 +199,8 @@
         "description": "Script divers de scraping",
         "features": [
           "Script de récupération ETF Boursorama et enrichissement",
-          "Script de récupération de données cryptos"
+          "Script de récupération de données cryptos",
+          "CSS custom pour mon éditeur de texte Obsidian"
         ],
         "status": "completed",
         "technologies": "Ruby"
