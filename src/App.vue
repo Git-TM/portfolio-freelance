@@ -24,7 +24,7 @@ const featured_projects = [
   'misterauto',
   'goodwill'
 ]
-const personal_projects = ['stock-alert', 'portfolio', 'spotify-save', 'script']
+const personal_projects = ['stock-alert', 'portfolio', 'spotifysave', 'script']
 
 const setInitialConfig = () => {
   configStore.setInitialConfig()

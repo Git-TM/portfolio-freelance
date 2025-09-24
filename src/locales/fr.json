@@ -181,7 +181,7 @@
         "status": "completed",
         "technologies": "Vue.js, Typescript"
       },
-      "spotify-save": {
+      "spotifysave": {
         "title": "Spotify Save",
         "description": "Outil Javascript pour sauvegarder l'ensemble des musiques de votre playlist Spotify",
         "features": [

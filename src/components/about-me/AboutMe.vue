@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 import { computed } from 'vue'
+import AboutMeImage from '@/assets/images/icons/about-me.svg'
 
 const { t, tm } = useI18n()
 
@@ -22,7 +23,7 @@ const technologies = computed(() => tm('aboutme.technologies') as string[])
         </ul>
       </div>
       <div class="aboutme-picture">
-        <!-- <img alt="Vue logo" class="navbar-logo" src="@/assets/images/moi.png" /> -->
+        <AboutMeImage />
       </div>
     </div>
   </div>

@@ -27,6 +27,10 @@ const close = () => {
 }
 
 const imageSrc = computed(() => {
+  console.log('images', images)
+  console.log('projectName:', props.projectName)
+  console.log('available keys:', Object.keys(images))
+  console.log('resolved image:', images[props.projectName])
   return images[props.projectName] || ''
 })
 </script>

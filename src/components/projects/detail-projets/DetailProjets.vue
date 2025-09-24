@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import IconCoding from '@/assets/images/icons/icon-coding.svg'
 import PrimaryButton from '@/components/unitary/buttons/primary-button/PrimaryButton'
 import ModalProject from '@/components/projects/modal-project/ModalProject'
 import { ref } from 'vue'
@@ -17,6 +16,7 @@ const isModalOpen = ref(false)
 const selectedProject = ref<string | null>(null)
 
 const openModal = (project: string) => {
+  console.log('openModal', project)
   selectedProject.value = project
   isModalOpen.value = true
 }

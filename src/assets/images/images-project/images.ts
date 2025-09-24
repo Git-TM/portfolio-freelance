@@ -6,6 +6,7 @@ import goodwill from './project-goodwill.png'
 import portfolio from './project-portfolio.png'
 import script from './project-script.png'
 import logicaps from './project-logicaps.png'
+import spotifysave from './project-spotifysave.png'
 
 const images: Record<string, string> = {
   vera,
@@ -15,7 +16,8 @@ const images: Record<string, string> = {
   goodwill,
   portfolio,
   script,
-  logicaps
+  logicaps,
+  spotifysave
 }
 
 export default images
