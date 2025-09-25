@@ -1,162 +1,272 @@
 {
   "banner": {
-    "presentation": "Hello, I am",
+    "presentation": "Hello, I'm",
     "headline": "I develop web and mobile applications.",
-    "description": "I am a software developer who has worked with clients ranging from startups to small businesses, on applications ranging from energy renovation to virtual second-hand clothing platforms."
+    "description": "I'm a software developer who has worked for clients ranging from startups to SMEs, on applications from energy renovation to virtual wardrobe sharing"
   },
   "aboutme": {
-    "headline": "About",
-    "first_paragraph": "After exploring the field of digital, growth, and automation for 3 years by supporting startups, I decided to dive into web development by joining Le Wagon in the summer of 2021.",
-    "second_paragraph": "I joined a web & mobile development agency where I work on various projects using Ruby On Rails and Vue.js/Ionic.",
-    "third_paragraph": "Here are the technologies I have worked with recently",
-    "technologies": ["Ruby on Rails", "Typescript", "Vue.js", "React Native"]
+    "headline": "About me",
+    "first_paragraph": "After exploring the digital, growth & automation field for 2 years while supporting startups, I decided to dive into web development by joining Le Wagon in summer 2021.",
+    "second_paragraph": "I joined a web & mobile development agency where I worked on various projects with Ruby On Rails and Vue.js/Ionic for Effy (SME) and Vera (Mobile startup)",
+    "third_paragraph": "I continued as a freelancer while becoming a teacher at Le Wagon and developed an MVP for Logicaps (Real estate startup)",
+    "fourth_paragraph": "Here are the technologies I've worked with recently",
+    "technologies": ["ruby_on_rails", "typescript", "react_js", "react_native"]
   },
   "formations": {
-    "headline": "Education and Training",
+    "headline": "Education and training",
     "lewagon": {
       "image": "lewagon",
       "date": "2021",
       "title": "Web Development Bootcamp",
-      "details": "Intensive training in Ruby on Rails, SQL, JS, and building a web project"
+      "details": "9-week intensive training on the following topics: Algorithms, JavaScript, SQL, JS and creation of a web project in Ruby On Rails"
     },
     "second_ebi": {
       "image": "ebi",
       "date": "2018 - 2020",
-      "title": "Biotech & Entrepreneurship Engineering",
+      "title": "Biotech & Entrepreneurship Engineer",
       "details": "Project launch & competitions, Innovation, Marketing (Digital, B2B)"
     },
     "first_ebi": {
       "image": "ebi",
       "date": "2015 - 2018",
-      "title": "Biotechnology Engineering Preparatory Program",
+      "title": "Engineering Preparatory Cycle",
       "details": "Biosciences, Math, Physics, Statistics (R), Programming (C++)"
     }
   },
   "experiences": {
-    "headline": "My Experiences",
+    "headline": "My experiences",
+    "logicaps": {
+      "name": "Logicaps",
+      "date_interval": "January 2025 -> September 2025",
+      "titre_poste": "Lead fullstack developer",
+      "missions": [
+        "Creation of ten key features (WebSocket chatrooms, budget tracking dashboard, document categorization, condo management, etc.)",
+        "Complete Stripe integration (plans & subscriptions) and OCR for document extraction",
+        "Various management: Docker, Sidekiq, Redis, anonymized analytics, Sentry, translations, etc."
+      ]
+    },
     "captive": {
       "name": "Captive",
       "date_interval": "October 2022 -> July 2024",
-      "titre_poste": "Back-end & Fullstack Developer",
+      "titre_poste": "Back-end & fullstack developer",
       "missions": [
-        "For Effy (2 energy renovation web applications), contributed to reducing technical debt and solving complex bugs: Application maintenance and version upgrades: Rails 5, 6, 7, Ruby 3, Sidekiq 7.",
-        "For Vera (Virtual wardrobe mobile app), improved multi-platform SSO (Account/User separation), created the outfit suggestion algorithm and improved SQL performance, integrated fullstack features: Rest API, Vue.js/Ionic integration (Outfit likes, follows), created tests (Rspec, Cypress, Jest).",
-        "Other projects: Backend features using TDD (unit and integration tests), SQL and API performance optimization, rights management & admin features, added soft-delete on key models, updated and maintained technical documentation."
+        "For Effy (2 energy renovation web applications), Participation in technical debt reduction and complex bug resolution: Application maintenance and version upgrades: Rails 5, 6, 7, Ruby 3, Sidekiq 7",
+        "For Vera (Virtual wardrobe mobile app) Multi-platform SSO improvement (Account / user separation), Creation of outfit suggestion algorithm and SQL improvement, Fullstack feature integrations: REST API, Vue.js/Ionic integration (Outfit likes, follow), Test creation (Rspec, Cypress, Jest)",
+        "Other projects: Backend features in TDD (unit tests, integration), SQL and API performance optimization, Rights management & admin features, Soft-delete addition on key models, Technical documentation update and maintenance"
       ]
     },
     "freelance": {
       "name": "Freelancing",
       "date_interval": "October 2020 -> October 2022",
-      "titre_poste": "Developer & Growth",
+      "titre_poste": "Developer & growth",
       "missions": [
-        "For Mister Auto: Led between the IT department and business teams for the implementation of the existing transactional system to Emarsys (SAP). Defined and implemented the design system, created a hundred HTML/CSS components with business logic.",
-        "For Goodwill: Designed an API enrichment engine (via 4 API endpoints) to enrich 13k accounting firms to obtain the contact details of their executives. Cleaned and segmented contacts, created automation for LinkedIn prospecting, email follow-ups (Ruby On Rails, Rest API, script, Google Sheets).",
-        "Various Growth missions: Set up outbound prospecting systems, SEO strategy, SEO audits, prospecting training, website setup, etc."
+        "For Mister Auto: Lead between IT department and business teams for implementing the existing transactional system to Emarsys (SAP). Design system definition and implementation, creation of a hundred HTML/CSS components with business logic.",
+        "For Goodwill: Design of an API enrichment engine (Via 4 API endpoints) to enrich 13k accounting firms to obtain contact details of company executives. Contact cleaning and segmentation, Creation of automation for LinkedIn prospecting, email follow-up (Ruby On Rails, REST API, script, Google Sheets)",
+        "Various Growth missions: Outbound prospecting system setup, SEO strategy, SEO audit, prospecting training, website setup, etc."
       ]
     },
     "lewagon": {
       "name": "Le Wagon",
       "date_interval": "July 2021 -> August 2024",
-      "titre_poste": "Assistant Teacher",
+      "titre_poste": "Teacher and project mentor",
       "missions": [
-        "Over 50 days of support for Le Wagon students and workshops (X-HEC).",
-        "Resolved tickets and explained concepts on the following topics: Ruby Algorithms, OOP, SQL, Front-end (HTML/CSS/JS), Ruby On Rails, Heroku, Git, Github."
+        "+15 days as teacher and project mentor",
+        "+50 days as assistant for Le Wagon students",
+        "Ticket resolution, concept explanation: Ruby algorithms, OOP, SQL, Front-end (HTML/CSS/JS), Ruby On Rails, Heroku, Git, Github, etc."
       ]
     },
     "cartelis": {
       "name": "Cartelis",
       "date_interval": "January 2020 -> September 2020",
-      "titre_poste": "Digital Consulting Intern",
+      "titre_poste": "Digital consultant internship",
       "missions": [
-        "Consulting mission: Operational lead for the implementation of a B2B prospecting system: targeting various customer segments, building targeted prospect databases, automated multi-channel contact (email, LinkedIn), and setting up performance tracking: CPL: 15.",
-        "Developed Google Sheet resources: Automated Firebase tagging plan, digital project planning, marketing action plan.",
-        "Wrote articles on data/digital topics (tool comparisons, lead scoring, prospecting, etc.)."
+        "Consulting mission: Operational lead for implementing a B2B prospecting system: targeting different customer segments, building targeted prospect database, automated multi-channel contact (email, LinkedIn), and performance tracking setup: CPL: 15",
+        "Google Sheet resource development: Automated firebase tagging plan, digital project planning, marketing action plan",
+        "Writing articles on data/digital topics (tool comparison, lead scoring, prospecting...)"
       ]
     }
   },
   "projects": {
     "calltoaction": "See more",
+    "features": "Features",
     "featured_projects": {
-      "headline": "My Professional Projects",
+      "headline": "My professional projects",
+      "logicaps": {
+        "title": "Logicaps",
+        "description": "Logicaps MVP, real estate joint ownership management through documents",
+        "features": [
+          "Creation of ten key features (WebSocket chatrooms, budget tracking dashboard, document categorization, condo management, etc.)",
+          "Complete Stripe integration (plans & subscriptions) and OCR for document extraction",
+          "Various management: Docker, Sidekiq, Redis, anonymized analytics, Sentry, translations, etc."
+        ],
+        "technologies": "ruby_on_rails, react_js, tailwind, shadcn",
+        "status": "completed"
+      },
       "vera": {
         "title": "Vera",
-        "description": "Mobile app for iOS and Android: Virtual wardrobe with a social dimension similar to Instagram (Account, Like, Follow, Share, Profile)",
+        "description": "iOS and Android mobile app: Virtual wardrobe and social dimension like Instagram (Account, Like, Follow, Share, Profile)",
         "features": [
-          "Improved multi-platform SSO (Account/User separation)",
-          "Created the outfit suggestion algorithm (SQL performance optimization)",
-          "Integrated fullstack features: Rest API, Vue.js/Ionic integration (Outfit likes, follows, outfits)",
-          "Created tests (Rspec, Cypress, Jest)"
+          "Multi-platform SSO improvement (Account / user separation)",
+          "Creation of outfit suggestion algorithm (SQL Performance)",
+          "Fullstack feature integrations: REST API, Vue.js/Ionic integration (Outfit likes, follow, outfits)",
+          "Test creation (Rspec, Cypress, Jest)"
         ],
-        "technologies": "Ruby On Rails, Vue.js, Ionic, GCP"
+        "technologies": "ruby_on_rails, vue, ionic, typescript",
+        "status": "completed"
       },
       "quelleenergie": {
         "title": "Quelleenergie",
-        "description": "Quelleenergie is a Back-office/ERP platform for French artisans involving geolocation, matchmaking, billing, etc.",
+        "description": "Quelleenergie is a Back-office/ERP platform for geolocation, matchmaking, billing, etc. for French craftsmen",
         "features": [
           "SQL query optimization on PostgreSQL and MySQL (geolocation/matching, data exports)",
-          "Revamped server logs and API documentation for tech teams",
-          "Data migrations with significant business impacts (hundreds of thousands of entries)",
-          "Added fullstack features"
+          "Server logs redesign and API documentation for tech teams",
+          "Data migrations with strong business impact (hundreds of thousands of entries)",
+          "Fullstack feature additions"
         ],
-        "technologies": "Ruby On Rails, JS"
+        "technologies": "ruby_on_rails, javascript",
+        "status": "completed"
       },
       "annuaire": {
-        "title": "Annuaire",
-        "description": "Ruby on Rails application for daily updates of 300k+ French artisans, their companies, certifications (https://artisans.quelleenergie.fr/)",
+        "title": "Annuaire RGE",
+        "description": "RoR application for daily updates of all 300k+ French craftsmen, their companies, certifications",
         "features": [
-          "Reduced technical debt (Table size reduction, API documentation overhaul, etc.)",
-          "Proactive bug monitoring (Datadog, GCP) and correction of complex bugs (APIs, tool synchronization, CRON & Jobs)",
-          "Added back-end and admin features",
-          "Application maintenance and version upgrades: Rails 5.2 to 7, Ruby 3",
-          "Data migrations with significant business impacts (hundreds of thousands of entries)"
+          "Technical debt reduction (Table size reduction, API doc redesign...)",
+          "Proactive bug monitoring (Datadog, GCP) and complex bug fixes (APIs, tool sync, CRON & Jobs)",
+          "Backend features addition, active_admin",
+          "Application maintenance and version upgrade: Rails 5.2 to 7, Ruby 3",
+          "Data migrations with strong business impact (hundreds of thousands of entries)"
         ],
-        "technologies": "Ruby On Rails, ActiveAdmin"
+        "technologies": "ruby_on_rails, javascript",
+        "status": "completed"
       },
       "misterauto": {
         "title": "Mister Auto",
-        "description": "Consultant for migrating the existing transactional system to Emarsys (SAP)",
+        "description": "Consultant for migrating existing transactional system to Emarsys (SAP)",
         "features": [
-          "Coordinated business rules between IT and business teams to handle country/product-specificities, etc.",
-          "Wrote technical documentation and provided training for 15 people to make teams autonomous",
-          "Result: 99.7% deliverability for over 150k emails/month (Integration of 45 emails in 19 languages)"
+          "Coordination between IT department and business team to manage country/product specificities, etc.",
+          "Integration of 45 emails in 19 languages, and rule management with ESL language",
+          "Technical documentation writing and training for 15 people, to make teams autonomous",
+          "Result: 99.7% deliverability for +150k emails/month sent"
         ],
-        "technologies": "HTML, CSS, ESL, Design system"
+        "technologies": "html, css",
+        "status": "completed"
       },
       "goodwill": {
         "title": "Goodwill",
-        "description": "Goodwill is a digital service company for accounting firms",
+        "description": "Goodwill is a digital services company for accountants",
         "features": [
-          "Designed an API enrichment engine (Via 4 API endpoints) to enrich 13k accounting firms and obtain the contact details of their executives",
-          "Cleaned and segmented contacts",
-          "Created automation for LinkedIn prospecting and email follow-ups (Ruby On Rails, Rest API, script, Google Sheets)"
+          "Design of an API enrichment engine (Via 4 API endpoints) to enrich 13k accounting firms to obtain contact details of company executives.",
+          "Contact cleaning and segmentation",
+          "Creation of automation for LinkedIn prospecting, email follow-up (Ruby On Rails, REST API, script, Google Sheets)"
         ],
-        "technologies": "Ruby On Rails, Sidekiq, Third-party APIs"
+        "technologies": "ruby_on_rails",
+        "status": "completed"
       }
     },
     "personal_projects": {
-      "headline": "My Personal Projects",
+      "headline": "My personal projects",
+      "stock-alert": {
+        "title": "Action Alert",
+        "description": "iOS and Android mobile app: Stock price alerts",
+        "features": [
+          "Creation of a Ruby on Rails server with JWT authentication and REST API",
+          "Creation of an iOS and Android mobile app with React Native and Expo",
+          "Coming: Ability to set a price alert on a current stock. 10-second polling to retrieve data."
+        ],
+        "status": "in-progress",
+        "technologies": "ruby_on_rails, react_native, expo"
+      },
       "portfolio": {
         "title": "Portfolio",
-        "description": "A simple portfolio showcasing my journey and projects",
+        "description": "Simple portfolio that traces my journey, my projects",
         "features": [
-          "Translation using vue-i18n to define all site content, auto translation button",
-          "Implemented responsive design for mobile"
+          "Translation with vue-i18n that defines all site content, auto translation button",
+          "Mobile responsive implementation"
         ],
-        "technologies": "Vue.js, Typescript"
+        "status": "completed",
+        "technologies": "vue, typescript"
       },
-      "script": {
-        "title": "Scraping Script",
-        "description": "Various scraping scripts",
+      "other_projects": {
+        "title": "Other projects",
+        "description": "Various projects, short ones, scripts, etc.",
         "features": [
-          "Script for retrieving and enriching ETF data from Boursorama",
-          "Script for retrieving cryptocurrency data"
+          "CLI tool in JS to save all music from your Spotify playlists (CSV Export)",
+          "Boursorama ETF retrieval and enrichment script",
+          "Crypto data retrieval script",
+          "Custom CSS for my Obsidian text editor"
         ],
-        "technologies": "Ruby"
+        "status": "completed",
+        "technologies": "ruby, javascript, css"
       }
     }
   },
-  "footer": {
-    "first_text": "Made in Paris in 2024 by Tristan Monteiro",
-    "second_text": "Images generated with Bing AI"
+  "contact": {
+    "headline": "Want to discuss tech?"
+  },
+  "status": {
+    "completed": "Completed",
+    "in-progress": "In progress"
+  },
+  "technologies_list": {
+    "ruby_on_rails": {
+      "logo": "ruby_on_rails",
+      "name": "Ruby on Rails"
+    },
+    "react_native": {
+      "logo": "react_native",
+      "name": "React Native"
+    },
+    "javascript": {
+      "logo": "javascript",
+      "name": "JavaScript"
+    },
+    "vue": {
+      "logo": "vue",
+      "name": "Vue.js"
+    },
+    "ionic": {
+      "logo": "ionic",
+      "name": "Ionic"
+    },
+    "ruby": {
+      "logo": "ruby",
+      "name": "Ruby"
+    },
+    "rails": {
+      "logo": "rails",
+      "name": "Rails"
+    },
+    "react_js": {
+      "logo": "react_js",
+      "name": "React"
+    },
+    "node_js": {
+      "logo": "node_js",
+      "name": "Node.js"
+    },
+    "typescript": {
+      "logo": "typescript",
+      "name": "TypeScript"
+    },
+    "html": {
+      "logo": "html",
+      "name": "HTML"
+    },
+    "css": {
+      "logo": "css",
+      "name": "CSS"
+    },
+    "tailwind": {
+      "logo": "tailwind",
+      "name": "Tailwind"
+    },
+    "shadcn": {
+      "logo": "shadcn",
+      "name": "Shadcn"
+    },
+    "expo": {
+      "logo": "expo",
+      "name": "Expo"
+    }
   }
 }

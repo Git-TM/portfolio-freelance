@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import PrimaryButton from '@/components/unitary/buttons/primary-button/PrimaryButton'
 import ModalProject from '@/components/projects/modal-project/ModalProject'
 import { ref } from 'vue'
 import StatusBadge from '@/components/unitary/status-badge/StatusBadge'
+import TechPreview from '@/components/list-technologies/TechPreview'
 
 const { t } = useI18n()
 
@@ -35,26 +35,51 @@ const number_title = props.projectType === 'featured_projects' ? '04. ' : '05. '
       <span class="numbered-title">{{ number_title }} </span
       >{{ t(`projects.${projectType}.headline`) }}
     </h2>
-    <div class="projects-card">
-      <div class="project-card" v-for="(project, index) in props.projects" :key="index">
-        <div class="project-card-title">
-          <h3>{{ t(`projects.${projectType}.${project}.title`) }}</h3>
-          <StatusBadge
-            :status="t(`projects.${projectType}.${project}.status`)"
-            :project_type="projectType"
-            :project_name="project"
-          />
+    <div class="projects-grid">
+      <div
+        class="project-card"
+        v-for="(project, index) in props.projects"
+        :key="index"
+        @click="openModal(project)"
+      >
+        <!-- Header: Titre + Status -->
+        <div class="card-header">
+          <h3 class="card-title">{{ t(`projects.${projectType}.${project}.title`) }}</h3>
+          <StatusBadge :status="t(`projects.${projectType}.${project}.status`)" />
         </div>
-        <p class="project-card-technologies">
-          {{ t(`projects.${projectType}.${project}.technologies`) }}
-        </p>
-        <p>{{ t(`projects.${projectType}.${project}.description`) }}</p>
-        <div class="project-card-link">
-          <PrimaryButton
-            :content="$t(`projects.calltoaction`)"
-            class="project-button"
-            @click="openModal(project)"
-          />
+
+        <!-- Divider -->
+        <div class="card-divider"></div>
+
+        <!-- Body: Description + Tech preview -->
+        <div class="card-body">
+          <p class="card-description">
+            {{ t(`projects.${projectType}.${project}.description`) }}
+          </p>
+
+          <div class="card-tech">
+            <TechPreview
+              :technologies="t(`projects.${projectType}.${project}.technologies`)"
+              :max-visible="3"
+              size="medium"
+            />
+          </div>
+        </div>
+
+        <!-- Footer: CTA -->
+        <div class="card-footer">
+          <button class="card-cta" @click.stop="openModal(project)">
+            {{ $t('projects.calltoaction') }}
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M9 18L15 12L9 6"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
         </div>
       </div>
     </div>

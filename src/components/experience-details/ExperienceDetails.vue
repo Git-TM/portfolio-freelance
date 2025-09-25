@@ -61,7 +61,7 @@ const handleSwipe = () => {
 
     <div class="experiences-content">
       <div class="experiences-menu desktop-menu">
-        <ul>
+        <ul class="list-clean">
           <li
             v-for="experienceKey in experiences"
             :key="experienceKey"
@@ -77,43 +77,50 @@ const handleSwipe = () => {
 
       <div class="mobile-experience-interface">
         <div class="mobile-nav-header">
-          <button @click="goToPrev" class="nav-btn prev-btn" :disabled="experiences.length <= 1">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path
-                d="M15 18L9 12L15 6"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
+          <!-- Compteur au-dessus -->
+          <div class="experience-counter">{{ currentIndex + 1 }}/{{ experiences.length }}</div>
 
-          <div class="current-experience">
-            <span class="experience-counter">{{ currentIndex + 1 }}/{{ experiences.length }}</span>
-            <h4>{{ t(`experiences.${selectedExperienceKey}.name`) }}</h4>
+          <!-- Navigation avec points au centre -->
+          <div class="navigation-row">
+            <button @click="goToPrev" class="nav-btn prev-btn" :disabled="experiences.length <= 1">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M15 18L9 12L15 6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+
+            <!-- Points de progression au centre -->
+            <div class="progress-indicators">
+              <div
+                v-for="(exp, index) in experiences"
+                :key="exp"
+                :class="['indicator', { active: index === currentIndex }]"
+                @click="selectExperience(exp)"
+              ></div>
+            </div>
+
+            <button @click="goToNext" class="nav-btn next-btn" :disabled="experiences.length <= 1">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M9 18L15 12L9 6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
           </div>
 
-          <button @click="goToNext" class="nav-btn next-btn" :disabled="experiences.length <= 1">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path
-                d="M9 18L15 12L9 6"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-        </div>
-
-        <div class="progress-indicators">
-          <div
-            v-for="(exp, index) in experiences"
-            :key="exp"
-            :class="['indicator', { active: index === currentIndex }]"
-            @click="selectExperience(exp)"
-          ></div>
+          <!-- Nom de l'expérience courante -->
+          <div class="current-experience-name">
+            <h4>{{ t(`experiences.${selectedExperienceKey}.name`) }}</h4>
+          </div>
         </div>
       </div>
 
@@ -125,10 +132,12 @@ const handleSwipe = () => {
               >@ {{ t(`experiences.${selectedExperienceKey}.name`) }}</span
             >
           </h3>
-          <p>{{ t(`experiences.${selectedExperienceKey}.date_interval`) }}</p>
+          <p class="primary-color-font">
+            {{ t(`experiences.${selectedExperienceKey}.date_interval`) }}
+          </p>
         </div>
         <div class="experiences-details-missions">
-          <ul>
+          <ul class="list-bullet">
             <li v-for="(mission, index) in selectedMissions" :key="index">
               {{ mission }}
             </li>

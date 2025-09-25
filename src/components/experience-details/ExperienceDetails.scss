@@ -15,7 +15,6 @@
     padding-right: 2rem;
 
     & ul {
-      list-style: none;
       display: block;
 
       & li {
@@ -24,11 +23,6 @@
         border-left: 0.5px solid grey;
         cursor: pointer;
         transition: all 0.3s ease;
-      }
-
-      & li::before {
-        content: '';
-        padding-right: 0rem;
       }
 
       & .menu-selected-value {
@@ -48,18 +42,7 @@
 
     & .experiences-details-missions {
       & ul {
-        padding: 0px;
-        margin: 0px;
         width: 100%;
-      }
-
-      & li {
-        margin-bottom: 1rem;
-      }
-
-      & li::before {
-        padding-right: 1rem;
-        font-weight: bold;
       }
     }
   }
@@ -87,68 +70,71 @@
   // Header de navigation mobile
   .mobile-nav-header {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     padding: 1rem;
     background: rgba(var(--primary-color-rgb), 0.05);
     border-radius: 12px;
     margin-bottom: 1rem;
+    gap: 1rem;
+  }
 
-    .nav-btn {
-      background: var(--primary-color);
-      border: none;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      cursor: pointer;
-      transition: all 0.3s ease;
+  // Compteur en haut
+  .experience-counter {
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    opacity: 0.7;
+    font-weight: 500;
+  }
 
-      &:hover:not(:disabled) {
-        transform: scale(1.1);
-        box-shadow: 0 4px 12px rgba(var(--primary-color-rgb), 0.3);
-      }
+  // Ligne de navigation avec flèches et points
+  .navigation-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 250px;
+  }
 
-      &:disabled {
-        opacity: 0.5;
-        cursor: not-allowed;
-      }
+  .nav-btn {
+    background: var(--primary-color);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+
+    &:hover:not(:disabled) {
+      transform: scale(1.1);
+      box-shadow: 0 4px 12px rgba(var(--primary-color-rgb), 0.3);
     }
 
-    .current-experience {
-      text-align: center;
-      flex: 1;
-
-      .experience-counter {
-        font-size: 0.8rem;
-        color: var(--primary-color);
-        opacity: 0.7;
-        display: block;
-      }
-
-      h4 {
-        margin: 0.2rem 0 0 0;
-        font-size: 1.1rem;
-        color: var(--primary-color);
-      }
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
     }
   }
 
-  // Indicateurs de progression
+  // Points de progression entre les flèches
   .progress-indicators {
     display: flex;
     justify-content: center;
     gap: 8px;
-    margin-bottom: 1rem;
+    flex: 1;
+    margin: 0 1rem;
 
     .indicator {
       width: 8px;
       height: 8px;
       border-radius: 50%;
-      background: rgba(var(--primary-color-rgb), 0.3);
+      background: grey;
       cursor: pointer;
       transition: all 0.3s ease;
 
@@ -160,6 +146,17 @@
       &:hover {
         transform: scale(1.2);
       }
+    }
+  }
+
+  // Nom de l'expérience en bas
+  .current-experience-name {
+    text-align: center;
+
+    h4 {
+      margin: 0;
+      font-size: 1.1rem;
+      color: var(--primary-color);
     }
   }
 

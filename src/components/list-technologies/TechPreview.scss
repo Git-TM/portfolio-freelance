@@ -1,0 +1,93 @@
+.tech-preview {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  .tech-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tech-icon {
+    object-fit: contain;
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .tech-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(57, 144, 255, 0.2);
+    color: var(--primary-color);
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.7rem;
+  }
+
+  .tech-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(57, 144, 255, 0.1);
+    color: var(--primary-color);
+    border: 1px solid rgba(57, 144, 255, 0.2);
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 0.2rem 0.4rem;
+    opacity: 0.8;
+  }
+
+  // Tailles
+  &.size-small {
+    gap: 0.3rem;
+
+    .tech-icon,
+    .tech-placeholder {
+      height: 20px;
+      width: 20px;
+    }
+
+    .tech-more {
+      font-size: 0.6rem;
+      padding: 0.1rem 0.3rem;
+    }
+  }
+
+  &.size-medium {
+    gap: 0.5rem;
+
+    .tech-icon,
+    .tech-placeholder {
+      height: 24px;
+      width: 24px;
+    }
+  }
+
+  &.size-large {
+    gap: 0.6rem;
+
+    .tech-icon,
+    .tech-placeholder {
+      height: 28px;
+      width: 28px;
+    }
+
+    .tech-more {
+      font-size: 0.8rem;
+    }
+  }
+
+  // Taille par défaut
+  .tech-icon,
+  .tech-placeholder {
+    height: 22px;
+    width: 22px;
+  }
+}

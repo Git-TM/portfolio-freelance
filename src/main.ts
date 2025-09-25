@@ -6,6 +6,8 @@ import App from './App.vue'
 
 // 1. Styles
 import '@/assets/stylesheets/global.scss'
+import '@/assets/stylesheets/card.scss'
+import '@/assets/stylesheets/mixins.scss'
 
 const app = createApp(App)
 

@@ -1,0 +1,90 @@
+// Glassmorphism effect
+@mixin glassmorphism($opacity: 0.08, $blur: 10px, $border-opacity: 0.15) {
+  background: rgba(57, 144, 255, $opacity);
+  border: 1px solid rgba(57, 144, 255, $border-opacity);
+  backdrop-filter: blur($blur);
+  border-radius: 16px;
+}
+
+// Card hover effects
+@mixin card-hover($translateY: -2px, $shadow-opacity: 0.15) {
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY($translateY);
+    box-shadow: 0 8px 25px rgba(57, 144, 255, $shadow-opacity);
+    background: rgba(57, 144, 255, 0.12);
+    border-color: var(--primary-color-hover);
+  }
+}
+
+// Primary button style
+@mixin primary-button($size: medium) {
+  background: var(--primary-color);
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  @if $size == small {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 0.5rem;
+  } @else if $size == medium {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.75rem;
+  } @else if $size == large {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 1rem;
+  }
+
+  &:hover {
+    background: var(--primary-color-hover);
+    transform: scale(1.05);
+  }
+}
+
+// Flexbox utilities
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// Responsive breakpoints
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+// Tech icon sizes
+@mixin tech-icon-size($size) {
+  @if $size == small {
+    height: 20px;
+    width: 20px;
+  } @else if $size == medium {
+    height: 24px;
+    width: 24px;
+  } @else if $size == large {
+    height: 28px;
+    width: 28px;
+  } @else {
+    height: 22px;
+    width: 22px;
+  }
+}

@@ -6,7 +6,7 @@ import { useConfigStore } from '@/stores/config'
 const configStore = useConfigStore()
 const currentLocale = computed(() => configStore.config.locale)
 
-const languages = ['fr', 'us', 'es']
+const languages = ['fr', 'us']
 const isDropdownOpen = ref(false)
 
 const switchLanguage = (lang: string) => {

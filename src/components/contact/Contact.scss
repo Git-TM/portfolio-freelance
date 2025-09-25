@@ -3,9 +3,6 @@
   margin-bottom: 4rem;
 
   & ul {
-    padding: 0;
-    list-style: none;
-
     & li {
       display: inline-block;
       margin: 0 10px;
@@ -14,9 +11,6 @@
         width: 64px;
         height: 64px;
       }
-    }
-    & li::before {
-      content: '';
     }
   }
 }

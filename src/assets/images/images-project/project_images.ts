@@ -6,9 +6,8 @@ import goodwill from './project-goodwill.png'
 import portfolio from './project-portfolio.png'
 import script from './project-script.png'
 import logicaps from './project-logicaps.png'
-import spotifysave from './project-spotifysave.png'
 
-const images: Record<string, string> = {
+const project_images: Record<string, string> = {
   vera,
   quelleenergie,
   annuaire,
@@ -16,8 +15,7 @@ const images: Record<string, string> = {
   goodwill,
   portfolio,
   script,
-  logicaps,
-  spotifysave
+  logicaps
 }
 
-export default images
+export default project_images

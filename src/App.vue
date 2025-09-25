@@ -7,9 +7,8 @@ import ExperienceDetails from '@/components/experience-details/ExperienceDetails
 import DetailProjets from '@/components/projects/detail-projets/DetailProjets'
 import InitialLoader from '@/components/initial-loader/InitialLoader'
 import TimelineFormation from '@/components/timeline-formation/TimelineFormation'
-import MainFooter from '@/components/main-footer/MainFooter'
 import Contact from '@/components/contact/Contact'
-import images from '@/assets/images/images-project/images'
+import images from '@/assets/images/images-project/project_images'
 import { useConfigStore } from '@/stores/config'
 
 const configStore = useConfigStore()
@@ -24,7 +23,7 @@ const featured_projects = [
   'misterauto',
   'goodwill'
 ]
-const personal_projects = ['stock-alert', 'portfolio', 'spotifysave', 'script']
+const personal_projects = ['stock-alert', 'portfolio', 'other_projects']
 
 const setInitialConfig = () => {
   configStore.setInitialConfig()
@@ -64,9 +63,8 @@ onMounted(() => {
     <TimelineFormation :formations="formations" />
     <AboutMe />
     <ExperienceDetails />
-    <DetailProjets :projects="featured_projects" , project-type="featured_projects" />
-    <DetailProjets :projects="personal_projects" , project-type="personal_projects" />
+    <DetailProjets :projects="featured_projects" project-type="featured_projects" />
+    <DetailProjets :projects="personal_projects" project-type="personal_projects" />
     <Contact />
-    <MainFooter />
   </div>
 </template>

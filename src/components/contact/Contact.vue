@@ -2,13 +2,16 @@
 import IconGithub from '@/assets/images/icons/contact/icon-github.svg'
 import IconLinkedin from '@/assets/images/icons/contact/icon-linkedin.svg'
 import IconMalt from '@/assets/images/icons/contact/icon-malt.svg'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 </script>
 
 <template>
   <img alt="Vue logo" class="montaign-image" src="@/assets/images/montaign-1.png" />
   <div class="contact-container">
-    <h3 class="darker-white">Tristan Monteiro</h3>
-    <ul>
+    <h3 class="darker-white">{{ t('contact.headline') }}</h3>
+    <ul class="list-clean">
       <a href="https://github.com/Git-TM" target="_blank" rel="noopener noreferrer"
         ><li><IconGithub /></li
       ></a>

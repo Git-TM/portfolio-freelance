@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import iconEbi from '@/assets/images/icons/formation/icon-ebi.webp'
+import iconEbi from '@/assets/images/icons/formation/icon-ebi.jpg'
 import iconLewagon from '@/assets/images/icons/formation/icon-lewagon.png'
 
 const { t } = useI18n()
@@ -23,10 +23,10 @@ const getRightImages = (formation: string): string => {
   <div class="timeline-container">
     <h2><span class="numbered-title">01. </span>{{ t(`formations.headline`) }}</h2>
     <div class="timeline-details">
-      <ul>
+      <ul class="list-clean">
         <li v-for="(formation, index) in props.formations" :key="index">
           <div class="timeline-detail">
-            <img alt="Vue logo" class="timeline-logo" :src="getRightImages(formation)" />
+            <img alt="Vue logo" :src="getRightImages(formation)" />
             <div class="timeline-description">
               <p class="timeline-description-title primary-color-font">
                 {{ t(`formations.${formation}.title`) }}

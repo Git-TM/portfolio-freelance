@@ -10,7 +10,7 @@
     "second_paragraph": "Je rejoins une agence de développement web & mobile ou je pratique sur différents projets avec Ruby On Rails et Vue.js/Ionic pour Effy (PME) et Vera (Start-up mobile)",
     "third_paragraph": "Je continue en freelance en passant professeur au Wagon et développe un MVP pour Logicaps (Start-up immobilière)",
     "fourth_paragraph": "Voila les technologies sur lesquels j'ai travaillé récemment",
-    "technologies": ["Ruby on Rails", "Typescript", "React.js", "React Native"]
+    "technologies": ["ruby_on_rails", "typescript", "react_js", "react_native"]
   },
   "formations": {
     "headline": "Etudes et formations",
@@ -18,7 +18,7 @@
       "image": "lewagon",
       "date": "2021",
       "title": "Bootcamp Développement Web",
-      "details": "Formation intensive en Ruby on Rails, SQL, JS et création d'un projet web"
+      "details": "Formation intensive de 9 semaines sur les sujets suivants : Algorithmie, JavaScript, SQL, JS et création d'un projet web en Ruby On Rails"
     },
     "second_ebi": {
       "image": "ebi",
@@ -29,7 +29,7 @@
     "first_ebi": {
       "image": "ebi",
       "date": "2015 - 2018",
-      "title": "Prépa Ingénieur Biotechnologie",
+      "title": "Cycle préparatoire Ingénieur",
       "details": "Biosciences, Maths, Physique, Statistiques (R), Programmation (C++)"
     }
   },
@@ -88,6 +88,7 @@
   },
   "projects": {
     "calltoaction": "Voir plus",
+    "features": "Fonctionnalités",
     "featured_projects": {
       "headline": "Mes projets professionels",
       "logicaps": {
@@ -98,7 +99,7 @@
           "Intégration complète de Stripe (plans & abonnements) et d’un OCR pour extractions documentaires",
           "Gestion diverses : Docker, Sidekiq, Redis, analytics anonymisées, Sentry, traductions etc.."
         ],
-        "technologies": "Ruby On rails, React.js, Inertia.js",
+        "technologies": "ruby_on_rails, react_js, tailwind, shadcn",
         "status": "completed"
       },
       "vera": {
@@ -110,7 +111,7 @@
           "Intégrations de fonctionnalités fullstack : API Rest, intégration en Vue.js/Ionic. (Like des tenues, follow, tenues)",
           "Création de tests (Rspec, Cypress, Jest)"
         ],
-        "technologies": "Ruby On rails, Vue.js, Ionic, GCP",
+        "technologies": "ruby_on_rails, vue, ionic, typescript",
         "status": "completed"
       },
       "quelleenergie": {
@@ -122,31 +123,32 @@
           "Migrations de données avec de forts impacts business (centaine de milliers d'entrée)",
           "Ajout de fonctionnalités fullstack"
         ],
-        "technologies": "Ruby On rails, JS",
+        "technologies": "ruby_on_rails, javascript",
         "status": "completed"
       },
       "annuaire": {
-        "title": "Annuaire",
+        "title": "Annuaire RGE",
         "description": "Application RoR de MAJ quotidienne de l'ensemble des 300k+ artisans de France, leurs sociétés, certifications",
         "features": [
           "Réduction de la dette technique (Réduction taille des tables, refonte doc API ..)",
           "Suivi proactif des bugs (Datadog, GCP) et correction de bugs complexes (APIs, synchro outils, CRON & Jobs)",
-          "Ajout de fonctionnalités back-end, admin",
+          "Ajout de fonctionnalités back-end, active_admin",
           "Maintenance applicative et montée en version : Rails 5.2 vers 7, Ruby 3",
           "Migrations de données avec de forts impacts business (centaine de milliers d'entrée)"
         ],
-        "technologies": "Ruby On rails, ActiveAdmin",
+        "technologies": "ruby_on_rails, javascript",
         "status": "completed"
       },
       "misterauto": {
         "title": "Mister Auto",
         "description": "Consultant migration du système transactionnel existant vers Emarsys (SAP)",
         "features": [
-          "Coordination des règles métiers entre DSI et équipe métier pour gérer les spécificités par pays/produits etc..",
+          "Coordination entre la DSI et l'équipe métier pour gérer les spécificités par pays/produits etc..",
+          "Intégration de 45 mails en 19 langues, et gestion des règles avec le language ESL",
           "Rédaction de la documentation technique et formation pour 15 personnes, afin de rendre les équipes autonomes",
-          "Résultat : 99,7% de délivrabilité pour +150k emails/mois. (Intégration de 45 mails en 19 langues)"
+          "Résultat : 99,7% de délivrabilité pour +150k emails/mois d'envoi"
         ],
-        "technologies": "HTML, CSS, ESL, Design system",
+        "technologies": "html, css",
         "status": "completed"
       },
       "goodwill": {
@@ -157,7 +159,7 @@
           "Nettoyage et segmentation des contacts",
           "Création d'une automatisation pour prospection Linkedin, relance mail (Ruby On Rails, API Rest, script, Google Sheets)"
         ],
-        "technologies": "Ruby On rails, Sidekiq, API tierces",
+        "technologies": "ruby_on_rails",
         "status": "completed"
       }
     },
@@ -172,7 +174,7 @@
           "A venir : Pouvoir définir une alerte de prix sur une action en cours. Polling de 10 secondes pour récupérer les données."
         ],
         "status": "in-progress",
-        "technologies": "Ruby on Rails, React Native, Expo"
+        "technologies": "ruby_on_rails, react_native, expo"
       },
       "portfolio": {
         "title": "Portfolio",
@@ -182,37 +184,89 @@
           "Mise en place de responsive pour mobile"
         ],
         "status": "completed",
-        "technologies": "Vue.js, Typescript"
+        "technologies": "vue, typescript"
       },
-      "spotifysave": {
-        "title": "Spotify Save",
-        "description": "Outil Javascript pour sauvegarder l'ensemble des musiques de votre playlist Spotify",
+      "other_projects": {
+        "title": "Autres projets",
+        "description": "Projets divers, courts, scripts, etc..",
         "features": [
-          "Création d'un serveur Node.js avec authentification Spotify",
-          "Marquage des playlists à sauvegarder"
-        ],
-        "status": "completed",
-        "technologies": "Vanilla JS"
-      },
-      "script": {
-        "title": "Script Scraping",
-        "description": "Script divers de scraping",
-        "features": [
+          "Outil CLI en JS pour sauvegarder l'ensemble des musiques de vos playlists Spotify (Export CSV)",
           "Script de récupération ETF Boursorama et enrichissement",
           "Script de récupération de données cryptos",
           "CSS custom pour mon éditeur de texte Obsidian"
         ],
         "status": "completed",
-        "technologies": "Ruby"
+        "technologies": "ruby, javascript, css"
       }
     }
   },
-  "footer": {
-    "first_text": "Fait a Paris en 2024 par Tristan Monteiro",
-    "second_text": "Images générées avec Bing IA"
+  "contact": {
+    "headline": "Envie de discuter tech ?"
   },
   "status": {
     "completed": "Finalisé",
     "in-progress": "En cours"
+  },
+  "technologies_list": {
+    "ruby_on_rails": {
+      "logo": "ruby_on_rails",
+      "name": "Ruby on Rails"
+    },
+    "react_native": {
+      "logo": "react_native",
+      "name": "React Native"
+    },
+    "javascript": {
+      "logo": "javascript",
+      "name": "JavaScript"
+    },
+    "vue": {
+      "logo": "vue",
+      "name": "Vue.js"
+    },
+    "ionic": {
+      "logo": "ionic",
+      "name": "Ionic"
+    },
+    "ruby": {
+      "logo": "ruby",
+      "name": "Ruby"
+    },
+    "rails": {
+      "logo": "rails",
+      "name": "Rails"
+    },
+    "react_js": {
+      "logo": "react_js",
+      "name": "React"
+    },
+    "node_js": {
+      "logo": "node_js",
+      "name": "Node.js"
+    },
+    "typescript": {
+      "logo": "typescript",
+      "name": "TypeScript"
+    },
+    "html": {
+      "logo": "html",
+      "name": "HTML"
+    },
+    "css": {
+      "logo": "css",
+      "name": "CSS"
+    },
+    "tailwind": {
+      "logo": "tailwind",
+      "name": "Tailwind"
+    },
+    "shadcn": {
+      "logo": "shadcn",
+      "name": "Shadcn"
+    },
+    "expo": {
+      "logo": "expo",
+      "name": "Expo"
+    }
   }
 }
