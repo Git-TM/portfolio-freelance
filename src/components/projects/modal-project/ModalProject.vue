@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref, watch } from 'vue'
+import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import project_images from '@/assets/images/images-project/project_images'
 import ListTechnologies from '@/components/list-technologies/ListTechnologies'
@@ -7,37 +7,29 @@ import ListTechnologies from '@/components/list-technologies/ListTechnologies'
 const { t, tm } = useI18n()
 
 const props = defineProps({
-  show: {
-    type: Boolean,
-    required: true
-  },
-  projectName: {
-    type: String,
-    required: true
-  },
-  projectType: {
-    type: String,
-    required: true
-  }
+  show: { type: Boolean, required: true },
+  projectName: { type: String, required: true },
+  projectType: { type: String, required: true }
 })
 
 const emit = defineEmits(['close'])
 
 const imageLoaded = ref(false)
+const modalRef = ref<HTMLElement | null>(null)
 
-const close = () => {
-  emit('close')
-}
+const close = () => emit('close')
 
-const features = computed(() => {
-  return tm(`projects.${props.projectType}.${props.projectName}.features`) as String[]
+// Typed features with fallback
+const features = computed<string[]>(() => {
+  const raw = tm(`projects.${props.projectType}.${props.projectName}.features`) as unknown
+  return Array.isArray(raw) ? (raw as string[]) : []
 })
 
 const imageSrc = computed(() => {
   return project_images[props.projectName] || ''
 })
 
-// Reset l'état de l'image quand on change de projet
+// Reset image state when project changes
 watch(
   () => props.projectName,
   () => {
@@ -45,20 +37,52 @@ watch(
   }
 )
 
+// Lock body scroll and focus modal when opened
+watch(
+  () => props.show,
+  (isOpen) => {
+    document.body.classList.toggle('modal-open', isOpen)
+    if (isOpen) {
+      // focus after next paint
+      requestAnimationFrame(() => modalRef.value?.focus())
+    }
+  },
+  { immediate: true }
+)
+
 const onImageLoad = () => {
   imageLoaded.value = true
 }
+
+const onKeydown = (e: KeyboardEvent) => {
+  if (e.key === 'Escape') close()
+}
+
+onMounted(() => {
+  if (props.show) modalRef.value?.focus()
+})
+onBeforeUnmount(() => {
+  document.body.classList.remove('modal-open')
+})
 </script>
 
 <template>
   <div class="modal-overlay" v-if="show" @click.self="close">
-    <div class="modal-content">
+    <div
+      class="modal-content"
+      ref="modalRef"
+      tabindex="-1"
+      role="dialog"
+      aria-modal="true"
+      :aria-labelledby="`modal-title-${projectName}`"
+      @keydown="onKeydown"
+    >
       <!-- Header -->
       <div class="modal-header">
-        <h3 class="modal-title">
+        <h3 class="modal-title" :id="`modal-title-${projectName}`">
           {{ t(`projects.${props.projectType}.${projectName}.title`) }}
         </h3>
-        <button class="close-button" @click="close">
+        <button class="close-button" @click="close" aria-label="Close">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
             <path
               d="M18 6L6 18M6 6L18 18"
@@ -73,15 +97,17 @@ const onImageLoad = () => {
 
       <!-- Image avec skeleton -->
       <div class="modal-image" v-if="imageSrc">
-        <!-- Skeleton loader -->
         <div v-if="!imageLoaded" class="image-skeleton"></div>
-
-        <!-- Image réelle -->
         <img
+          :key="imageSrc"
           :src="imageSrc"
           :alt="`${projectName} project screenshot`"
           class="modal-photo"
           :class="{ loaded: imageLoaded }"
+          decoding="async"
+          loading="eager"
+          width="600"
+          height="256"
           @load="onImageLoad"
         />
       </div>
