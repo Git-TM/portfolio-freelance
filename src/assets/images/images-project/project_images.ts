@@ -1,11 +1,11 @@
-import vera from './project-vera.jpeg'
-import quelleenergie from './project-quelleenergie.png'
-import annuaire from './project-annuaire.png'
-import misterauto from './project-misterauto.png'
-import goodwill from './project-goodwill.png'
-import portfolio from './project-portfolio.png'
-import script from './project-script.png'
-import logicaps from './project-logicaps.png'
+import vera from './project-vera.webp'
+import quelleenergie from './project-quelleenergie.webp'
+import annuaire from './project-annuaire.webp'
+import misterauto from './project-misterauto.webp'
+import goodwill from './project-goodwill.webp'
+import portfolio from './project-portfolio.webp'
+import script from './project-script.webp'
+import logicaps from './project-logicaps.webp'
 
 const project_images: Record<string, string> = {
   vera,

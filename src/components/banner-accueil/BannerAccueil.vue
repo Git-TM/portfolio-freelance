@@ -6,7 +6,7 @@ const { t } = useI18n()
 
 <template>
   <div class="banner-container">
-    <img alt="Vue logo" class="moon-image" src="@/assets/images/new-moon.png" />
+    <img alt="Vue logo" class="moon-image" src="@/assets/images/new-moon.webp" />
     <div class="banner-headline">
       <p class="primary-color-font">{{ t('banner.presentation') }}</p>
       <h3 class="big-heading brighter-title">Tristan Monteiro.</h3>
