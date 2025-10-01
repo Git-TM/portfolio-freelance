@@ -9,7 +9,7 @@
     "first_paragraph": "Après avoir exploré le domaine du digital, growth & automatisation pendant 2 ans en accompagnant des start-ups, je décide de me plonger dans le développement web en intégrant Le Wagon l'été 2021.",
     "second_paragraph": "Je rejoins une agence de développement web & mobile ou je pratique sur différents projets avec Ruby On Rails et Vue.js/Ionic pour Effy (PME) et Vera (Start-up mobile)",
     "third_paragraph": "Je continue en freelance en passant professeur au Wagon et développe un MVP pour Logicaps (Start-up immobilière)",
-    "fourth_paragraph": "Voila les technologies sur lesquels j'ai travaillé récemment",
+    "fourth_paragraph": "Voila les technologies sur lesquels j'ai travaillé récemment :",
     "technologies": ["ruby_on_rails", "typescript", "react_js", "react_native"]
   },
   "formations": {

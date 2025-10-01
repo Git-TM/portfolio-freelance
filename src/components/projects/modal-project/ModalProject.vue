@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import project_images from '@/assets/images/images-project/project_images'
 import ListTechnologies from '@/components/list-technologies/ListTechnologies'
@@ -23,6 +23,8 @@ const props = defineProps({
 
 const emit = defineEmits(['close'])
 
+const imageLoaded = ref(false)
+
 const close = () => {
   emit('close')
 }
@@ -34,6 +36,18 @@ const features = computed(() => {
 const imageSrc = computed(() => {
   return project_images[props.projectName] || ''
 })
+
+// Reset l'état de l'image quand on change de projet
+watch(
+  () => props.projectName,
+  () => {
+    imageLoaded.value = false
+  }
+)
+
+const onImageLoad = () => {
+  imageLoaded.value = true
+}
 </script>
 
 <template>
@@ -57,9 +71,19 @@ const imageSrc = computed(() => {
         </button>
       </div>
 
-      <!-- Image -->
+      <!-- Image avec skeleton -->
       <div class="modal-image" v-if="imageSrc">
-        <img :src="imageSrc" alt="project-photo" class="modal-photo" />
+        <!-- Skeleton loader -->
+        <div v-if="!imageLoaded" class="image-skeleton"></div>
+
+        <!-- Image réelle -->
+        <img
+          :src="imageSrc"
+          :alt="`${projectName} project screenshot`"
+          class="modal-photo"
+          :class="{ loaded: imageLoaded }"
+          @load="onImageLoad"
+        />
       </div>
 
       <!-- Content -->

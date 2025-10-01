@@ -16,7 +16,6 @@ const isModalOpen = ref(false)
 const selectedProject = ref<string | null>(null)
 
 const openModal = (project: string) => {
-  console.log('openModal', project)
   selectedProject.value = project
   isModalOpen.value = true
 }
